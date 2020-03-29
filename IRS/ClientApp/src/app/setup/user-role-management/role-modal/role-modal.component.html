@@ -1,0 +1,26 @@
+  <div class="modal-header">
+    <h4 class="modal-title">Manage User {{userAndRoleData.userName}}'s Roles</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      x
+    </button>
+  </div>
+  <form #rolesForm="ngForm" id="rolesForm">
+    <div class="form-check ml-3" *ngFor="let role of roles">
+      <!--Org Admin role is read only when user is Global user, Admin role is read only for all users so Admin doesnt remove it mistakenly -->
+      <input
+        class="form-check-input"
+        type="checkbox" value="role.name"
+        [checked]="role.checked"
+        (change)="role.checked = !role.checked"
+        [disabled]="role.name === 'Organization Admin' && userAndRoleData.userName === 'Admin' || role.name === 'Admin' ">
+      <label>{{role.name}}</label>
+    </div>
+  </form>
+  <div class="modal-footer taskboard-modal-footer">
+    <button type="button" class="btn btn-default" (click)="activeModal.dismiss('Cross click')">Cancel</button>
+    <button class="btn btn-raised btn-raised btn-primary" (click)="updateRoles()">
+      Save
+    </button>
+  </div>
+
+

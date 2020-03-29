@@ -1,0 +1,148 @@
+<!--User Profile Starts-->
+<!--Basic User Details Starts-->
+<form [formGroup]="systemSettingsEditForm" #formDir="ngForm" (ngSubmit)="submit()" class="form form-horizontal" id="systemSettingsEditFormId">
+  <section>
+    <div class="row text-left">
+      <!--Nav justification Starts-->
+      <div class="col-md-12 col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">{{ModalTitle}}</h4>
+          </div>
+          <div class="card-content">
+            <div *ngIf="systemSettingsEditForm.invalid && formDir.submitted" class="col-sm-8 alert alert-danger ml-3">
+                  <p><strong>Error: </strong>You have an invalid input in one of the tabs. Please check.</p>
+            </div>
+            <div class="card-body">
+              <ngb-tabset [justify]="currentJustify">
+                  <ngb-tab title="General Settings">
+                      <ng-template ngbTabContent>
+                        <h4 class="form-section"><i class="ft-user"></i> General Settings</h4>
+                        <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="title">Max Image File Size:</label>
+                                  <input type="text" id="maxImageFileSize" class="form-control" placeholder="Max Image File Size in MB" formControlName="maxImageFileSize" [ngClass]="{'is-invalid': systemSettingsEditForm.get('maxImageFileSize').errors && (formDir.submitted || systemSettingsEditForm.get('maxImageFileSize').touched) }">
+                                  <div class="" *ngIf="systemSettingsEditForm.get('maxImageFileSize').hasError('required') && (formDir.submitted || systemSettingsEditForm.get('maxImageFileSize').touched)">Max Image File Size is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="description">Max Video File Size:</label>
+                                  <input type="text" id="maxVideoFileSize" class="form-control" placeholder="Max Video File Size in MB" formControlName="maxVideoFileSize" [ngClass]="{'is-invalid': systemSettingsEditForm.get('maxVideoFileSize').errors && (formDir.submitted || systemSettingsEditForm.get('maxVideoFileSize').touched) }">
+                                  <div class="" *ngIf="systemSettingsEditForm.get('maxVideoFileSize').hasError('required') && (formDir.submitted || systemSettingsEditForm.get('maxVideoFileSize').touched)">Max Video File Size is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="routeCause">Accepted Video File Types:</label>
+                                <input type="text" id="acceptedVideoFileTypes" class="form-control" placeholder="comma seperated values e.g .mp4,.3gp" formControlName="acceptedVideoFileTypes" [ngClass]="{'is-invalid': systemSettingsEditForm.get('acceptedVideoFileTypes').errors && (formDir.submitted || systemSettingsEditForm.get('acceptedVideoFileTypes').touched) }">
+                                <div class="" *ngIf="systemSettingsEditForm.get('acceptedVideoFileTypes').hasError('required') && (formDir.submitted || systemSettingsEditForm.get('acceptedVideoFileTypes').touched)">Accepted Video File Types is required</div>
+                            </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="organizationId">Accepted Image File Types: </label>
+                                <input type="text" id="acceptedImageFileTypes" class="form-control" placeholder="comma seperated values e.g .jpg,.png" formControlName="acceptedImageFileTypes" [ngClass]="{'is-invalid': systemSettingsEditForm.get('acceptedImageFileTypes').errors && (formDir.submitted || systemSettingsEditForm.get('acceptedImageFileTypes').touched) }">
+                                <div class="" *ngIf="systemSettingsEditForm.get('acceptedImageFileTypes').hasError('required') && (formDir.submitted || systemSettingsEditForm.get('acceptedImageFileTypes').touched)">Accepted Image File Types is required</div>
+                            </fieldset>                                
+                        </div>
+                        </div>
+                      </ng-template>
+                    </ngb-tab>
+                <ngb-tab title="Email Settings">
+                  <ng-template ngbTabContent>
+                    <h4 class="form-section"><i class="ft-user"></i> Email Settings</h4>
+                    <div class="row">
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="title">Email Sender Name:</label>
+                              <input type="text" id="emailSenderName" class="form-control" placeholder="Email Sender Name" formControlName="emailSenderName" [ngClass]="{'is-invalid': systemSettingsEditForm.get('emailSenderName').errors && (formDir.submitted || systemSettingsEditForm.get('emailSenderName').touched) }">
+                              <div class="" *ngIf="systemSettingsEditForm.get('emailSenderName').hasError('required') && (formDir.submitted || systemSettingsEditForm.get('emailSenderName').touched)">Sender Name is required</div>
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="description">Sender Email Address:</label>
+                              <input type="text" id="emailSendersEmail" class="form-control" placeholder="Sender's Email" formControlName="emailSendersEmail" [ngClass]="{'is-invalid': systemSettingsEditForm.get('emailSendersEmail').errors && (formDir.submitted || systemSettingsEditForm.get('emailSendersEmail').touched) }">
+                              <div class="" *ngIf="systemSettingsEditForm.get('emailSendersEmail').hasError('required') && (formDir.submitted || systemSettingsEditForm.get('emailSendersEmail').touched)">Sender's Email is required</div>
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                        <fieldset class="form-group">
+                            <label for="routeCause">Host Name:</label>
+                            <input type="text" id="hostName" class="form-control" placeholder="Host Name" formControlName="hostName" [ngClass]="{'is-invalid': systemSettingsEditForm.get('hostName').errors && (formDir.submitted || systemSettingsEditForm.get('hostName').touched) }">
+                            <div class="" *ngIf="systemSettingsEditForm.get('hostName').hasError('required') && (formDir.submitted || systemSettingsEditForm.get('hostName').touched)">Host Name is required</div>
+                        </fieldset>                                
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-12">
+                      <fieldset class="form-group">
+                          <label for="emailSenderPassword">Sender Password: </label>
+                          <div class="inputWithIcon">
+                              <input [type]="isPasswordHidden ? 'password' : 'test'" class="form-control mt-1" placeholder="Sender Password" formControlName="emailSenderPassword" [ngClass]="{'is-invalid': systemSettingsEditForm.get('emailSenderPassword').errors && (formDir.submitted || systemSettingsEditForm.get('emailSenderPassword').touched) }">
+                              <i aria-hidden="true" (click)="hidePasswordToggle()" [ngClass]="isPasswordHidden ? 'ft-eye-off' : 'ft-eye'"></i>
+                          </div>
+                          <div class="" *ngIf="systemSettingsEditForm.get('emailSenderPassword').hasError('required') && (formDir.submitted || systemSettingsEditForm.get('emailSenderPassword').touched)">Email Sender Password is required</div>
+                      </fieldset>                                
+                  </div>
+                    <!-- <div class="col-xl-3 col-lg-6 col-md-12">
+                        <fieldset class="form-group">
+                            <label for="organizationId">Sender Password: </label>
+                            <input type="password" passwordToggle id="emailSenderPassword" class="form-control" placeholder="Sender Password" formControlName="emailSenderPassword" [ngClass]="{'is-invalid': systemSettingsEditForm.get('emailSenderPassword').errors && (formDir.submitted || systemSettingsEditForm.get('emailSenderPassword').touched) }">
+                            <div class="" *ngIf="systemSettingsEditForm.get('emailSenderPassword').hasError('required') && (formDir.submitted || systemSettingsEditForm.get('emailSenderPassword').touched)">Sender Password is required</div>
+                        </fieldset>                                
+                    </div> -->
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="title">Port No:</label>
+                                <input type="text" id="port" class="form-control" placeholder="Email Server Port Number" formControlName="port" [ngClass]="{'is-invalid': systemSettingsEditForm.get('port').errors && (formDir.submitted || systemSettingsEditForm.get('port').touched) }">
+                                <div class="" *ngIf="systemSettingsEditForm.get('port').hasError('required') && (formDir.submitted || systemSettingsEditForm.get('port').touched)">Sender Name is required</div>
+                            </fieldset>                                
+                        </div>
+                    </div>
+                  </ng-template>
+                </ngb-tab>
+                <ngb-tab title="SMS Settings">
+                    <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-user"></i> SMS Settings</h4>
+                      <div class="row">
+                          <div class="col-md-2">
+                            <div class="form-group row">
+                                <label class="col-md-4 label-control" for="sendSMS">Send SMS: </label>
+                                <div class="col-md-8">
+                                  <input type="checkbox" (change)="sendSMS = !sendSMS" id="sendSMS" class="mt-2" placeholder="Middle Name" formControlName="sendSMS">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group row">
+                                <label class="col-md-3 label-control" for="smsServiceProvider">SMS Provider: </label>
+                                <div class="col-md-9">
+                                    <select class="form-control" id="smsServiceProvider" formControlName="smsServiceProvider" placeholder="SMS Provider" >
+                                        <option value=""></option>
+                                        <option *ngFor="let sms of smsServiceProviderList" [value]="sms.id">{{sms.name}}</option>
+                                    </select>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                  </ngb-tab>
+              </ngb-tabset>
+            </div>
+          </div>
+          <div class="form-actions right">
+            <button type="submit" class="btn btn-raised btn-primary mr-2" form="systemSettingsEditFormId" [disabled]="(systemSettingsEditForm.invalid && formDir.submitted)">
+                <i class="fa fa-check-square-o"></i> Save
+            </button>
+            <button type="button" class="btn btn-raised btn-warning mr-2" [routerLink]="['/setup/systemsettings/edit']" >
+              <i class="ft-x"></i> Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </form>

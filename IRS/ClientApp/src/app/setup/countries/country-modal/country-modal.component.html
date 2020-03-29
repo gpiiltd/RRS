@@ -1,0 +1,37 @@
+<div class="modal-header px-4">
+  <h4 class="modal-title">{{ModalTitle}}</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body px-4">
+  <form [formGroup]="countryEditForm" #formDir="ngForm" (ngSubmit)="submit()" role="form" class="form form-horizontal" id="stateFormId">
+    <div class="form-group row">
+      <label class="col-md-2 label-control" for="emailTo">Code 1</label>
+      <div class="col-md-4">
+        <input type="text" id="" class="form-control" placeholder="Code 1" formControlName="code1" [ngClass]="{'is-invalid': countryEditForm.get('code1').errors && (formDir.submitted || countryEditForm.get('code1').touched) }">
+        <div class="" *ngIf="countryEditForm.get('code1').hasError('required') && (formDir.submitted || countryEditForm.get('code1').touched)">Code 1 is required</div>
+      </div>
+      <label class="col-md-2 label-control" for="emailTo">Country Name </label>
+      <div class="col-md-4">
+        <input type="text" id="" class="form-control" placeholder="Country Name" formControlName="name" [ngClass]="{'is-invalid': countryEditForm.get('name').errors && (formDir.submitted || countryEditForm.get('name').touched) }">
+        <div class="" *ngIf="countryEditForm.get('name').hasError('required') && (formDir.submitted || countryEditForm.get('name').touched)">Name is required</div>
+      </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-md-2 label-control" for="emailTo">Code 2</label>
+        <div class="col-md-4">
+          <input type="text" id="" class="form-control" placeholder="Code 2" formControlName="code2">
+         </div>
+      <label class="col-md-2 label-control" for="description">Description </label>
+      <div class="col-md-4">
+        <input type="text" id="emailCC" class="form-control" placeholder="Description" formControlName="description">
+      </div>
+    </div>
+
+  </form>
+</div>
+<div class="modal-footer px-4">
+  <button *ngIf="screenMode!=='viewMode'" type="submit" class="btn btn-raised btn-primary" form="stateFormId" [disabled]="(countryEditForm.invalid && formDir.submitted )">Save</button>
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.dismiss('Cross click')">Cancel</button>
+</div>

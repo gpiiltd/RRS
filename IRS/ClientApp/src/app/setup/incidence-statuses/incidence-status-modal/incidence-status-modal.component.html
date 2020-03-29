@@ -1,0 +1,27 @@
+<div class="modal-header px-4">
+    <h4 class="modal-title">{{ModalTitle}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body px-4">
+    <form [formGroup]="incidenceStatusEditForm" #formDir="ngForm" (ngSubmit)="submit()" role="form" class="form form-horizontal" id="incidenceStatusFormId">
+      <div class="form-group row">
+        <label class="col-md-2 label-control" for="name">Name</label>
+        <div class="col-md-4">
+          <input type="text" id="" class="form-control" placeholder="Name" formControlName="name" [ngClass]="{'is-invalid': incidenceStatusEditForm.get('name').errors && (formDir.submitted || incidenceStatusEditForm.get('name').touched) }">
+          <div class="" *ngIf="incidenceStatusEditForm.get('name').hasError('required') && (formDir.submitted || incidenceStatusEditForm.get('name').touched)">Name is required</div>
+        </div>
+        <label class="col-md-2 label-control" for="description">Description</label>
+        <div class="col-md-4">
+          <input type="text" id="" class="form-control" placeholder="Description" formControlName="description" [ngClass]="{'is-invalid': incidenceStatusEditForm.get('description').errors && (formDir.submitted || incidenceStatusEditForm.get('description').touched) }">
+          <div class="" *ngIf="incidenceStatusEditForm.get('description').hasError('required') && (formDir.submitted || incidenceStatusEditForm.get('description').touched)">Description is required</div>
+        </div>
+      </div>
+  
+    </form>
+  </div>
+  <div class="modal-footer px-4">
+    <button *ngIf="screenMode!=='view'" type="submit" class="btn btn-raised btn-primary" form="incidenceStatusFormId" [disabled]="(incidenceStatusEditForm.invalid && formDir.submitted )">Save</button>
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.dismiss('Cross click')">Cancel</button>
+  </div>

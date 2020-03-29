@@ -1,0 +1,44 @@
+<div class="modal-header px-4">
+  <h4 class="modal-title">{{ModalTitle}}</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body px-4">
+  <form [formGroup]="stateEditForm" #formDir="ngForm" (ngSubmit)="submit()" role="form" class="form form-horizontal" id="stateFormId">
+    <div class="form-group row">
+      <label class="col-md-2 label-control" for="emailTo">Code </label>
+      <div class="col-md-4">
+        <input type="text" id="" class="form-control" placeholder="Code" formControlName="stateCode" [ngClass]="{'is-invalid': stateEditForm.get('stateCode').errors && (formDir.submitted || stateEditForm.get('stateCode').touched) }">
+        <div class="" *ngIf="stateEditForm.get('stateCode').hasError('required') && (formDir.submitted || stateEditForm.get('stateCode').touched)">Code is required</div>
+      </div>
+      <label class="col-md-2 label-control" for="emailTo">State Name </label>
+      <div class="col-md-4">
+        <input type="text" id="" class="form-control" placeholder="State Name" formControlName="stateName" [ngClass]="{'is-invalid': stateEditForm.get('stateName').errors && (formDir.submitted || stateEditForm.get('stateName').touched) }">
+        <div class="" *ngIf="stateEditForm.get('stateName').hasError('required') && (formDir.submitted || stateEditForm.get('stateName').touched)">Name is required</div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 label-control" for="description">Description </label>
+      <div class="col-md-4">
+        <input type="text" id="emailCC" class="form-control" placeholder="Description" formControlName="description">
+      </div>
+    </div>
+    <h4 class="form-section"><i class="ft-info"></i> Country</h4>
+    <div class="form-group row">
+      <label class="col-md-2 label-control" for="country">Country </label>
+      <div class="col-md-4">
+          <select class="form-control" id="" formControlName="countryId" [ngClass]="{'is-invalid': stateEditForm.get('countryId').errors && (formDir.submitted || stateEditForm.get('countryId').touched) }">
+              <option value=""></option>
+              <option *ngFor="let country of countryList" [value]="country.id">{{country.name}}</option>
+          </select>
+          <div class="" *ngIf="stateEditForm.get('countryId').hasError('required') && (formDir.submitted || stateEditForm.get('countryId').touched)">Country is required</div>
+      </div>
+    </div>
+
+  </form>
+</div>
+<div class="modal-footer px-4">
+  <button *ngIf="screenMode!=='viewMode'" type="submit" class="btn btn-raised btn-primary" form="stateFormId" [disabled]="(stateEditForm.invalid && formDir.submitted )">Save</button>
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.dismiss('Cross click')">Cancel</button>
+</div>

@@ -1,0 +1,22 @@
+input[type=checkbox] {
+    transform: scale(2.0);
+}
+
+// password field and icon segment
+input[type=text]{
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+  }
+  
+  .inputWithIcon{
+    position:relative;
+  }
+  
+  .inputWithIcon i{
+    position:absolute;
+    right:0;
+    top:3px;
+    padding:9px 8px ;
+  }
+// end password field and icon segment

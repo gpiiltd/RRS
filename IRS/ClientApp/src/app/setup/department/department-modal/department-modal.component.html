@@ -1,0 +1,227 @@
+<form [formGroup]="deptEditForm" #formDir="ngForm" (ngSubmit)="submit()" role="form" class="form form-horizontal" id="deptFormId">
+    <section>
+      <div class="row text-left">
+        <!--Nav justification Starts-->
+        <div class="col-md-12 col-lg-12">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">{{ModalTitle}} </h4>
+            </div>
+            <div class="card-content">
+              <div *ngIf="deptEditForm.invalid && formDir.submitted" class="col-sm-8 alert alert-danger ml-3">
+                    <p><strong>Error: </strong>You have an invalid input in one of the tabs. Please check.</p>
+              </div>
+              <div class="card-body">
+                <ngb-tabset [justify]="currentJustify">
+                  <ngb-tab title="Basic Details">
+                    <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-briefcase"></i> General Info</h4>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="title">Code:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Department Code" formControlName="code" [ngClass]="{'is-invalid': deptEditForm.get('code').errors && (formDir.submitted || deptEditForm.get('code').touched) }">
+                                  <div class="" *ngIf="deptEditForm.get('code').hasError('required') && (formDir.submitted || deptEditForm.get('code').touched)">Department Code is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="description">Name:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Name" formControlName="name" [ngClass]="{'is-invalid': deptEditForm.get('name').errors && (formDir.submitted || deptEditForm.get('name').touched) }">
+                                  <div class="" *ngIf="deptEditForm.get('name').hasError('required') && (formDir.submitted || deptEditForm.get('name').touched)">Department Name is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="organizationId">Description: </label>
+                                  <input type="text" id="" class="form-control" placeholder="Description" formControlName="description">
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="routeCause">Email 1:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Email 1" formControlName="email1" [ngClass]="{'is-invalid': deptEditForm.get('email1').errors && (formDir.submitted || deptEditForm.get('email1').touched) }">
+                                  <div class="" *ngIf="deptEditForm.get('email1').hasError('email') && (formDir.submitted || deptEditForm.get('email1').touched)">Email must be a valid email address</div>
+                              </fieldset>                                
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="title">Email 2:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Email 2" formControlName="email2" [ngClass]="{'is-invalid': deptEditForm.get('email2').errors && (formDir.submitted || deptEditForm.get('email2').touched) }">
+                                  <div class="" *ngIf="deptEditForm.get('email2').hasError('email') && (formDir.submitted || deptEditForm.get('email2').touched)">Email must be a valid email address</div>
+                              </fieldset>                                
+                          </div> 
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="title">Phone 1:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Phone 1" formControlName="phone1">
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="title">Phone 2:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Phone 2" formControlName="phone2">
+                              </fieldset>                                
+                          </div>                                
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab title="File Settings">
+                    <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-info"></i> File Settings</h4>
+                      <div class="row">
+                          <div class="col-md-3 offset-md-9">
+                                <div class="form-group">
+                                    <label class="col-md-8 label-control" for="activateEmailSettings">Activate Department File Settings: </label>
+                                    <input type="checkbox" (change)="activateFileSettings = !activateFileSettings" id="" class="mt-2 ml-1 float-right" placeholder="Middle Name" formControlName="activateFileSettings">
+                                </div> 
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="title">Max Image File Size:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Max Image File Size in MB" formControlName="maxImageFileSize" [ngClass]="{'is-invalid': deptEditForm.get('maxImageFileSize').errors && (formDir.submitted || deptEditForm.get('maxImageFileSize').touched) }">
+                                  <div class="" *ngIf="deptEditForm.get('maxImageFileSize').hasError('required') && (formDir.submitted || deptEditForm.get('maxImageFileSize').touched)">Max Image File Size is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="description">Max Video File Size:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Max Video File Size in MB" formControlName="maxVideoFileSize" [ngClass]="{'is-invalid': deptEditForm.get('maxVideoFileSize').errors && (formDir.submitted || deptEditForm.get('maxVideoFileSize').touched) }">
+                                  <div class="" *ngIf="deptEditForm.get('maxVideoFileSize').hasError('required') && (formDir.submitted || deptEditForm.get('maxVideoFileSize').touched)">Max Video File Size is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="routeCause">Accepted Video File Types:</label>
+                                <input type="text" id="" class="form-control" placeholder="e.g .mp4,.3gp" formControlName="acceptedVideoFileTypes" [ngClass]="{'is-invalid': deptEditForm.get('acceptedVideoFileTypes').errors && (formDir.submitted || deptEditForm.get('acceptedVideoFileTypes').touched) }">
+                                <div class="" *ngIf="deptEditForm.get('acceptedVideoFileTypes').hasError('required') && (formDir.submitted || deptEditForm.get('acceptedVideoFileTypes').touched)">Accepted Video File Types is required</div>
+                            </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="organizationId">Accepted Image File Types: </label>
+                                <input type="text" id="" class="form-control" placeholder="e.g .jpg,.png" formControlName="acceptedImageFileTypes" [ngClass]="{'is-invalid': deptEditForm.get('acceptedImageFileTypes').errors && (formDir.submitted || deptEditForm.get('acceptedImageFileTypes').touched) }">
+                                <div class="" *ngIf="deptEditForm.get('acceptedImageFileTypes').hasError('required') && (formDir.submitted || deptEditForm.get('acceptedImageFileTypes').touched)">Accepted Image File Types is required</div>
+                            </fieldset>                                
+                        </div>
+                      </div>
+                      
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab title="Email Settings">
+                    <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-mail"></i> Email Settings</h4>
+                      <div class="row">
+                              <div class="col-md-4 offset-md-8">
+                                    <div class="form-group">
+                                        <label class="col-md-10 label-control" for="activateEmailSenderSettings">Activate Department Email Sender Settings: </label>
+                                        <input type="checkbox" (change)="activateEmailSenderSettings = !activateEmailSenderSettings" id="" class="mt-2 ml-1 float-right" placeholder="" formControlName="activateEmailSenderSettings">
+                                    </div> 
+                              </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="title">Email Sender Name:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Email Sender Name" formControlName="emailSenderName" [ngClass]="{'is-invalid': deptEditForm.get('emailSenderName').errors && (formDir.submitted || deptEditForm.get('emailSenderName').touched) }">
+                                  <div class="" *ngIf="deptEditForm.get('emailSenderName').hasError('required') && (formDir.submitted || deptEditForm.get('emailSenderName').touched)">Email Sender Name is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="description">Sender Email Address:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Sender's Email" formControlName="emailSendersEmail" [ngClass]="{'is-invalid': deptEditForm.get('emailSendersEmail').errors && (formDir.submitted || deptEditForm.get('emailSendersEmail').touched) }">
+                                  <div class="" *ngIf="deptEditForm.get('emailSendersEmail').hasError('required') && (formDir.submitted || deptEditForm.get('emailSendersEmail').touched)">Sender Email is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="description">Host Name:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Host Name" formControlName="hostName" [ngClass]="{'is-invalid': deptEditForm.get('hostName').errors && (formDir.submitted || deptEditForm.get('hostName').touched) }">
+                                  <div class="" *ngIf="deptEditForm.get('hostName').hasError('required') && (formDir.submitted || deptEditForm.get('hostName').touched)">Host Name is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group ">
+                                <label for="organizationId">Sender Password: </label>
+                                <div class="inputWithIcon">
+                                    <input [type]="isPasswordHidden ? 'password' : 'test'" class="form-control mt-1" placeholder="Sender Password" formControlName="emailSenderPassword" [ngClass]="{'is-invalid': deptEditForm.get('emailSenderPassword').errors && (formDir.submitted || deptEditForm.get('emailSenderPassword').touched) }">
+                                    <i aria-hidden="true" (click)="hidePasswordToggle()" [ngClass]="isPasswordHidden ? 'ft-eye-off' : 'ft-eye'"></i>
+                                </div>
+                                <div class="" *ngIf="deptEditForm.get('emailSenderPassword').hasError('required') && (formDir.submitted || deptEditForm.get('emailSenderPassword').touched)">Email Sender Password is required</div>
+                              </fieldset>                                
+                          </div>
+ 
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label for="title">Port No:</label>
+                                    <input type="text" id="" class="form-control" placeholder="Email Server Port Number" formControlName="port" [ngClass]="{'is-invalid': deptEditForm.get('port').errors && (formDir.submitted || deptEditForm.get('port').touched) }">
+                                    <div class="" *ngIf="deptEditForm.get('port').hasError('required') && (formDir.submitted || deptEditForm.get('port').touched)">Port is required</div>
+                                </fieldset>                                
+                            </div>
+                        </div>
+                        <h4 class="form-section"><i class="ft-mail"></i> Email Receiver Details</h4>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label for="organizationId">Email Notification Recipients: </label>
+                                    <textarea class="form-control" id="emailRecipientAddresses" formControlName="emailRecipientAddresses" rows="2" placeholder="e.g example1@gmail.com,example2@gmail.com"></textarea>
+                                </fieldset>                                
+                            </div>
+                        </div>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab title="SMS Settings">
+                      <ng-template ngbTabContent>
+                          <h4 class="form-section"><i class="ft-mail"></i> SMS Settings</h4>
+                          <div class="row">
+                            <div class="col-md-2">
+                              <div class="form-group row">
+                                  <label class="col-md-6 label-control" for="sendSMS">Send SMS: </label>
+                                  <div class="col-md-6">
+                                    <input type="checkbox" (change)="sendSMS = !sendSMS" id="" class="mt-2" placeholder="Middle Name" formControlName="sendSMS">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group row">
+                                <label class="col-md-4 label-control" for="smsServiceProvider">SMS Provider: </label>
+                                <div class="col-md-8">
+                                    <select class="form-control" id="" formControlName="smsServiceProvider" placeholder="SMS Provider" [ngClass]="{'is-invalid': deptEditForm.get('smsServiceProvider').errors && (formDir.submitted || deptEditForm.get('smsServiceProvider').touched) }">
+                                        <option value=""></option>
+                                        <option *ngFor="let sms of smsServiceProviderList" [value]="sms.id">{{sms.name}}</option>
+                                    </select>
+                                    <div class="" *ngIf="deptEditForm.get('smsServiceProvider').hasError('required') && (formDir.submitted || deptEditForm.get('smsServiceProvider').touched)">SMS Provider is required</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <h4 class="form-section"><i class="ft-mail"></i> SMS Receiver Details</h4>
+                          <div class="row">
+                              <div class="col-xl-3 col-lg-6 col-md-12">
+                                  <fieldset class="form-group">
+                                      <label for="organizationId">SMS Notification Recipients: </label>
+                                      <input type="text" id="" class="form-control" placeholder="e.g +2347001234567,+2347001234568" formControlName="smsRecipientNumbers">
+                                  </fieldset>                                
+                              </div>
+                          </div>
+                      </ng-template>
+                    </ngb-tab>
+                  </ngb-tabset>
+              </div>
+            </div>
+            <div class="form-actions right">
+                <button *ngIf="screenMode!=='view'" type="submit" class="btn btn-raised btn-primary mr-2" form="deptFormId" [disabled]="(deptEditForm.invalid && formDir.submitted )">Save</button>
+                <button type="button" class="btn btn-outline-dark mr-4" (click)="activeModal.dismiss('Cross click')">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </form>

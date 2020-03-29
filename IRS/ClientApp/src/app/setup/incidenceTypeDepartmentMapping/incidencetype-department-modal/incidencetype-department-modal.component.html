@@ -1,0 +1,46 @@
+<div class="modal-header px-4">
+    <h4 class="modal-title">{{ModalTitle}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body px-4">
+    <form [formGroup]="incidenceTypeDepartmentEditForm" #formDir="ngForm" (ngSubmit)="submit()" role="form" class="form form-horizontal" id="deptFormId">
+      <div class="form-group row">
+        <label class="col-md-2 label-control" for="country">Incidence Type</label>
+        <div class="col-md-4">
+            <select class="form-control" id="" formControlName="incidenceTypeId" [ngClass]="{'is-invalid': incidenceTypeDepartmentEditForm.get('incidenceTypeId').errors && (formDir.submitted || incidenceTypeDepartmentEditForm.get('incidenceTypeId').touched) }">
+                <option value=""></option>
+                <option *ngFor="let it of incidenceTypesList" [value]="it.id">{{it.name}}</option>
+            </select>
+            <div class="" *ngIf="incidenceTypeDepartmentEditForm.get('incidenceTypeId').hasError('required') && (formDir.submitted || incidenceTypeDepartmentEditForm.get('incidenceTypeId').touched)">Incidence Type is required</div>
+        </div>
+        <label class="col-md-2 label-control" for="country">Department</label>
+        <div class="col-md-4">
+            <select class="form-control" id="" formControlName="departmentId" [ngClass]="{'is-invalid': incidenceTypeDepartmentEditForm.get('departmentId').errors && (formDir.submitted || incidenceTypeDepartmentEditForm.get('departmentId').touched) }">
+                <option value=""></option>
+                <option *ngFor="let dept of departmentList" [value]="dept.id">{{dept.name}}</option>
+            </select>
+            <div class="" *ngIf="incidenceTypeDepartmentEditForm.get('departmentId').hasError('required') && (formDir.submitted || incidenceTypeDepartmentEditForm.get('departmentId').touched)">Department is required</div>
+        </div>
+      </div>
+      <div>
+        <!--h4 class="form-section"><i class="ft-info"></i> Organization</!--h4>
+        <div class="form-group row">
+          <label class="col-md-2 label-control" for="country">Organization</label>
+          <div class="col-md-4">
+              <select class="form-control" id="" formControlName="organizationId" [ngClass]="{'is-invalid': incidenceTypeDepartmentEditForm.get('organizationId').errors && (formDir.submitted || incidenceTypeDepartmentEditForm.get('organizationId').touched) }">
+                  <option value=""></option>
+                  <option *ngFor="let org of orgList" [value]="org.id">{{org.name}}</option>
+              </select>
+              <div class="" *ngIf="incidenceTypeDepartmentEditForm.get('organizationId').hasError('required') && (formDir.submitted || incidenceTypeDepartmentEditForm.get('organizationId').touched)">Organization is required</div>
+          </div>
+        </div>
+        -->
+    </div>
+    </form>
+  </div>
+  <div class="modal-footer px-4">
+    <button *ngIf="screenMode!=='viewMode'" type="submit" class="btn btn-raised btn-primary" form="deptFormId" [disabled]="(incidenceTypeDepartmentEditForm.invalid && formDir.submitted )">Save</button>
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.dismiss('Cross click')">Cancel</button>
+  </div>

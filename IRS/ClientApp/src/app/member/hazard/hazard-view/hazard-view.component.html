@@ -1,0 +1,396 @@
+
+<form class="form form-horizontal" id="incidentFormId">
+    <section>
+      <div class="row text-left">
+        <!--Nav justification Starts-->
+        <div class="col-md-12 col-lg-12">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">{{ModalTitle}}</h4>
+            </div>
+            <fieldset [disabled]="true">
+            <div class="card-content">
+              <div class="card-body">
+                <ngb-tabset [justify]="currentJustify">
+                  <ngb-tab>
+                      <ng-template ngbTabTitle> General Info</ng-template>
+                      <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-user"></i> General Info</h4>
+                      
+                      
+                          <div class="row">
+                              <div class="col-xl-3 col-lg-6 col-md-12">
+                                  <fieldset class="form-group">
+                                      <label for="title">Code:</label>
+                                      <input type="text" id="" class="form-control" placeholder="Code" name="code" [(ngModel)]="hazard.code">
+                                  </fieldset>                                
+                              </div>
+                              <div class="col-xl-3 col-lg-6 col-md-12">
+                                  <fieldset class="form-group">
+                                      <label for="routeCause">Route Cause:</label>
+                                      <input type="text" id="" class="form-control" placeholder="Route Cause" [(ngModel)]="hazard.routeCause" name="routeCause">
+                                  </fieldset>                                
+                                </div>
+                              <div class="col-xl-6 col-lg-6 col-md-12">
+                                  <fieldset class="form-group">
+                                      <label for="description">Description:</label>
+                                      <textarea class="form-control" id="" [(ngModel)]="hazard.description" rows="2" placeholder="Description:" name="description"></textarea>
+                                  </fieldset>                                
+                              </div>
+                              
+                            </div>
+                            <div class="row">
+                              <div class="col-xl-3 col-lg-6 col-md-12">
+                                  <fieldset class="form-group">
+                                      <label for="assignedOrganizationId">Assigned Organization: </label>
+                                      <select class="form-control" id="" [(ngModel)]="hazard.assignedOrganizationId" placeholder="Organization" name="assignedOrganizationId">
+                                          <option value=""></option>
+                                          <option *ngFor="let org of organizationList" [value]="org.id">{{org.name}}</option>
+                                      </select>
+                                  </fieldset>                                
+                              </div>
+                              <div class="col-xl-3 col-lg-6 col-md-12">
+                                  <fieldset class="form-group">
+                                      <label for="assignedDepartmentId">Assigned Department:</label>
+                                      <select class="form-control" id="" [(ngModel)]="hazard.assignedDepartmentId" name="assignedDepartmentId" placeholder="Department">
+                                          <option value=""></option>
+                                          <option *ngFor="let dept of departmentList" [value]="dept.id">{{dept.name}}</option>
+                                      </select>
+                                  </fieldset>                                
+                              </div>
+                              <div class="col-xl-3 col-lg-6 col-md-12">
+                                  <fieldset class="form-group">
+                                      <label for="assignerId">Assigner: </label>
+                                      <select class="form-control" id="" name="assignerId" [(ngModel)]="hazard.assignerId" placeholder="Assigner">
+                                          <option value=""></option>
+                                          <option *ngFor="let user of allUserList" [value]="user.id">{{user.name}}</option>
+                                      </select>
+                                  </fieldset>                                
+                              </div>
+                              <div class="col-xl-3 col-lg-6 col-md-12">
+                                  <fieldset class="form-group">
+                                      <label for="assigneeId">Assignee:</label>
+                                      <select class="form-control" id="" name="assigneeId" [(ngModel)]="hazard.assigneeId" placeholder="Assignee" >
+                                          <option value=""></option>
+                                          <option *ngFor="let user of userList" [value]="user.id">{{user.name}}</option>
+                                      </select>
+                                  </fieldset>                                
+                              </div>
+                            </div>
+                            <div class="row">
+                                
+                                <div class="col-xl-6 col-lg-6 col-md-12">
+                                    <fieldset class="form-group">
+                                        <label for="comment">Comment: </label>
+                                        <textarea class="form-control" id="" name="comment" [(ngModel)]="hazard.comment" rows="2" placeholder="Comment:"></textarea>
+                                    </fieldset>                                
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12">
+                                    <fieldset class="form-group">
+                                        <label for="suggestion">Suggestion:</label>
+                                        <textarea class="form-control" id="" name="suggestion" [(ngModel)]="hazard.suggestion" rows="2" placeholder="Suggestion:"></textarea>
+                                    </fieldset>                                
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-6 col-md-12">
+                                    <fieldset class="form-group">
+                                        <label for="hazardStatusId">Hazard Status:</label>
+                                        <select class="form-control" id="" name="hazardStatusId" [(ngModel)]="hazard.incidenceStatusId" placeholder="Hazard Status" >
+                                            <option value="" ></option>
+                                            <option *ngFor="let incStatus of hazardStatusList" [value]="incStatus.id">{{incStatus.name}}</option>
+                                        </select>
+                                    </fieldset>                                
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-md-12">
+                                    <fieldset class="form-group">
+                                        <label for="resolutionDate">Resolution Date:</label>
+                                            <input
+                                              class="form-control"
+                                              placeholder="Date of Resolution"
+                                              bsDatepicker
+                                              name="resolutionDate"
+                                              [(ngModel)]="hazard.resolutionDate"
+                                              [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD', containerClass: 'theme-dark-blue' }">
+                                    </fieldset>                                
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-md-12">
+                                    <fieldset class="form-group">
+                                        <label for="hazardManagerFeedbackRating">Manager's Rating:</label>
+                                        <div class="mt-1">
+                                          <ngb-rating [(rate)]="hazard.managerFeedbackRating" [readonly]="true" max="5">
+                                              <ng-template let-fill="fill">
+                                                <span class="star" [class.filled]="fill === 100">&#9733;</span>
+                                              </ng-template>
+                                          </ngb-rating>
+                                        </div>
+                                    </fieldset>                                
+                                </div>
+                              
+                            </div>
+                      
+                      </ng-template>
+                    </ngb-tab>
+                    <ngb-tab>
+                    <ng-template ngbTabTitle>Reporter's Details</ng-template>
+                      <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-user"></i> Reporter's Info</h4>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-md-3 label-control" for="reporterName">Reporter's Name: </label>
+                            <div class="col-md-9">
+                              <input type="text" id="" class="form-control" placeholder="Reporter" name="reporterName" [(ngModel)]="hazard.reporterName" >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-md-3 label-control" for="reporterEmail">Reporter's Email: </label>
+                            <div class="col-md-9">
+                              <input type="text" id="" class="form-control" placeholder="Reporter Email" name="reporterEmail" [(ngModel)]="hazard.reporterEmail" >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-md-3 label-control" for="reporterDepartmentId">Reporter's Department: </label>
+                              <div class="col-md-9">
+                                  <select class="form-control" id="" name="reporterDepartmentId" [(ngModel)]="hazard.reporterDepartmentId" placeholder="Reporter's Department">
+                                      <option value=""></option>
+                                      <option *ngFor="let dept of departmentList" [value]="dept.id">{{dept.name}}</option>
+                                  </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group row">
+                                  <label class="col-md-3 label-control" for="hazardReporterFeedbackRating">Reporter's Rating: </label>
+                                  <div class="col-md-9">
+                                    <!-- <input type="text" id="" class="form-control" placeholder="Reporter" [(ngModel)]="hazard.reporterFeedbackRating"> -->
+                                    <ngb-rating [(rate)]="hazard.reporterFeedbackRating" [readonly]="true" max="5">
+                                        <ng-template let-fill="fill">
+                                          <span class="star" [class.filled]="fill === 100">&#9733;</span>
+                                        </ng-template>
+                                    </ngb-rating>
+                                  </div>
+                              </div>
+                          </div>      
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-md-3 label-control" for="reporterFirstResponderAction">First Responder Action: </label>
+                                <div class="col-md-9">
+                                    <textarea class="form-control" id="" name="reporterFirstResponderAction" [(ngModel)]="hazard.reporterFirstResponderAction" rows="3" placeholder="First Responder Action:"></textarea>
+                                </div>
+                              </div>
+                            </div>     
+                        </div>
+                        
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab>
+                  <ng-template ngbTabTitle>Location Details</ng-template>
+                    <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-info"></i> Location</h4>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="countryId">Country </label>
+                                  <select class="form-control" id="" name="countryId" [(ngModel)]="hazard.countryId">
+                                      <option value=""></option>
+                                      <option *ngFor="let country of countryList" [value]="country.id">{{country.name}}</option>
+                                  </select>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="stateId">State </label>
+                                  <select class="form-control" id="" name="stateId" [(ngModel)]="hazard.stateId">
+                                      <option value=""></option>
+                                      <option *ngFor="let state of stateList" [value]="state.id">{{state.name}}</option>
+                                  </select>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="countryId">City </label>
+                                  <select class="form-control" id="" name="cityId" [(ngModel)]="hazard.cityId">
+                                      <option value=""></option>
+                                      <option *ngFor="let city of cityList" [value]="city.id">{{city.name}}</option>
+                                  </select>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="areaId">Area </label>
+                                <select class="form-control" id="" name="areaId" [(ngModel)]="hazard.areaId">
+                                    <option value=""></option>
+                                    <option *ngFor="let area of areaList" [value]="area.id">{{area.name}}</option>
+                                </select>
+                            </fieldset>                                
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="reportedHazardLatitude">Latitude: </label>
+                                  <input type="text" id="" class="form-control" placeholder="Latitude" name="reportedHazardLatitude" [(ngModel)]="hazard.reportedHazardLatitude" >
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="reportedHazardLongitude">Longitude: </label>
+                                  <input type="text" id="" class="form-control" placeholder="Longitude" name="reportedHazardLongitude" [(ngModel)]="hazard.reportedHazardLongitude" >
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-6 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="address">Address: </label>
+                                  <textarea class="form-control" id="" name="address" [(ngModel)]="hazard.address" rows="3" placeholder="Address:"></textarea>
+                              </fieldset>                                
+                          </div>
+                      </div>
+                      
+                        </ng-template>
+                  </ngb-tab>
+                  <ngb-tab>
+                      <ng-template ngbTabTitle>Reported Photos/Videos</ng-template>
+                      <ng-template ngbTabContent>
+                          <div class="">
+                            <h4>Toggle Photos or Videos</h4>
+                            <div class="form-group">
+                              <ui-switch class="ml-2 float-left" (change)="onChange()">
+                              </ui-switch>
+  
+                              <div class="float-right" *ngIf="showUploadFileButtons">
+                                  <label for="file-upload" class="custom-file-upload btn btn-raised btn-raised btn-primary ml-4">
+                                    <input id="file-upload" #fileInput multiple (change)="uploadPhoto(mediaChannel.mobileReported)" type="file"/>
+                                    <span class="label-text">Upload Photo/Video</span><i class="fa ft-paperclip ml-1"></i>
+                                  </label>
+                              </div>
+                            </div>
+                            </div>
+                          <div id="" class="" *ngIf=photoVideoToggle>
+                              <h4 class="form-section mt-5"><i class="ft-info"></i> Photos</h4>
+  
+                              <div class="progress mt-1" *ngIf="progress && progress.percentage < 100">
+                                  <div class="progress-bar" [style.width]="progress.percentage + '%'">
+                                    <span class="sr-only">{{ progress.percentage }}% Complete</span>
+                                  </div>
+                                </div>
+                                <!-- <div class="right" *ngIf="isManagerialUser">
+                                  <p>
+                                      <a (click)="manageReportedPhotos()" class="btn btn-raised btn-raised btn-primary">
+                                          <i class="fa fa-edit"></i> Toggle Photo Management
+                                      </a>
+                                  </p>
+                                </div> -->
+                                <div *ngIf="!showManageReportedPhotos" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                  <ng-image-slider [images]="hazardReportedPhotos" 
+                                  [imageSize]="{width: sliderImageWidth, height: sliderImageHeight}"> #nav></ng-image-slider>
+                                </div>
+                                <div *ngIf="showManageReportedPhotos">
+                                    <app-photo-editor [photos]="hazardReportedPhotos"></app-photo-editor>
+                                </div>
+                          </div>
+                          <div id="" class="" *ngIf=!photoVideoToggle>
+                              <div class="videoMaxWrapper">
+                                <h4 class="form-section mt-5"><i class="ft-info"></i> Videos</h4>
+  
+                                <!-- <div class="right">
+                                    <p>
+                                        <a (click)="manageReportedVideos()" class="btn btn-raised btn-raised btn-primary">
+                                            <i class="fa fa-edit"></i> Toggle Video Management
+                                        </a>
+                                    </p>
+                                </div> -->
+                                <div *ngIf="!showManageReportedVideos">
+                                  <ng-image-slider [images]="hazardReportedVideos" #nav></ng-image-slider>
+                                </div>
+                                <div *ngIf="showManageReportedVideos">
+                                  <app-video-editor [videos]="hazardReportedVideos"></app-video-editor>
+                                </div>
+                            </div>
+                          </div>
+                      </ng-template>
+                  </ngb-tab>
+                  <ngb-tab>
+                      <ng-template ngbTabTitle>Resolution Photos/Videos</ng-template>
+                      <ng-template ngbTabContent>
+                        <div class="">
+                          <h4>Toggle Photos or Videos</h4>
+                          <div class="form-group">
+                          <ui-switch class="ml-2 float-left" (change)="onChange()">
+                          </ui-switch>
+  
+                          <div class="float-right" *ngIf="showUploadFileButtons">
+                            <label for="file-upload" class="custom-file-upload btn btn-raised btn-raised btn-primary ml-4">
+                              <input id="file-upload" #fileInput multiple (change)="uploadPhoto(mediaChannel.webResolved)" type="file"/>
+                              <span class="label-text">Upload Photo/Video</span><i class="fa ft-paperclip ml-1"></i>
+                            </label>
+                          </div>
+                        </div>
+                        </div>
+                            <div id="" class="" *ngIf=photoVideoToggle>
+                                <h4 class="form-section mt-5"><i class="ft-info"></i> Photos</h4>
+                                        
+                                <!--input *ngIf="auth.authenticated()" type="file" (change)="uploadPhoto()" #fileInput> -->
+                                <div class="progress mt-1" *ngIf="progress && progress.percentage < 100">
+                                  <div class="progress-bar" [style.width]="progress.percentage + '%'">
+                                    <span class="sr-only">{{ progress.percentage }}% Complete</span>
+                                  </div>
+                                </div>
+                                <!-- <div class="right" *ngIf="isManagerialUser">
+                                  <p>
+                                      <a (click)="manageResolutionPhotos()" class="btn btn-raised btn-raised btn-primary">
+                                          <i class="fa fa-edit"></i> Toggle Photo Management
+                                      </a>
+                                  </p>
+                                </div> -->
+                                <div *ngIf="!showManageResolutionPhotos" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                  <ng-image-slider [images]="hazardResolutionPhotos" 
+                                  [imageSize]="{width: sliderImageWidth, height: sliderImageHeight}"> #nav></ng-image-slider>
+                                </div>
+                                <div *ngIf="showManageResolutionPhotos">
+                                  <app-photo-editor [photos]="hazardResolutionPhotos"></app-photo-editor>
+                                </div>
+                            </div>
+                            <div id="" class="" *ngIf=!photoVideoToggle>
+                                <div class="videoMaxWrapper">
+                                <h4 class="form-section mt-5"><i class="ft-info"></i> Videos</h4>
+                                <!-- <div class="right">
+                                    <p>
+                                        <a (click)="manageResolutionVideos()" class="btn btn-raised btn-raised btn-primary">
+                                            <i class="fa fa-edit"></i> Toggle Video Management
+                                        </a>
+                                    </p>
+                                </div> -->
+                                <div *ngIf="!showManageResolutionVideos">
+                                  <ng-image-slider [images]="hazardResolutionVideos" #nav></ng-image-slider>
+                                </div>
+                                <div *ngIf="showManageResolutionVideos">
+                                  <app-video-editor [videos]="hazardResolutionVideos"></app-video-editor>
+                                </div>
+                              </div>
+                            </div>
+                      </ng-template>
+                  </ngb-tab>
+                    
+                </ngb-tabset>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-actions videoMaxWrapper right">
+            <button type="button" class="btn btn-raised btn-warning mr-2" [routerLink]="['/hazards']" >
+              <i class="ft-x"></i> Cancel
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </form>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Release\netcoreapp2.2\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Release\netcoreapp2.2\PubTmp\EFSQLScripts\IRS.DAL.ApplicationDbContext.sql" />
+</sitemanifest>

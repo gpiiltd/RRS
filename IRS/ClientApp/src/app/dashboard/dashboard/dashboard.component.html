@@ -1,0 +1,191 @@
+<div>
+    <div class="card bg-light mb-0 mt-0 pl-3 pt-2">
+        <span class="text-bold-500 primary ml-0">All Time Stats:</span>
+        <div class="row p-2">
+            <div class="col-xl-2 col-lg-6 col-md-6 col-12">
+                <div class="card bg-success">
+                  <div class="card-content">
+                    <div class="card-body pt-2 pb-0">
+                      <div class="media">
+                        <div class="media-body white text-left">
+                          <h3 class="font-large-1 mb-0">{{queryResult.allClosedItems}}</h3>
+                          <span>Closed</span>
+                        </div>
+                        <div class="media-right white text-right">
+                          <i class="icon-bulb font-large-1"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Widget-line-chart" class="height-55 WidgetlineChart WidgetlineChartShadow mb-3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6 col-md-6 col-12">
+                <div class="card bg-warning">
+                  <div class="card-content">
+                    <div class="card-body pt-2 pb-0">
+                      <div class="media">
+                        <div class="media-body white text-left">
+                          <h3 class="font-large-1 mb-0">{{queryResult.allUnderReviewItems}}</h3>
+                          <span>Under Review</span>
+                        </div>
+                        <div class="media-right white text-right">
+                          <i class="icon-pie-chart font-large-1"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Widget-line-chart2" class="height-55 WidgetlineChart WidgetlineChartShadow mb-3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-xl-2 col-lg-6 col-md-6 col-12">
+                <div class="card bg-primary">
+                  <div class="card-content">
+                    <div class="card-body pt-2 pb-0">
+                      <div class="media">
+                        <div class="media-body white text-left">
+                          <h3 class="font-large-1 mb-0">{{queryResult.allResolvedItems}}</h3>
+                          <span>Resolved</span>
+                        </div>
+                        <div class="media-right white text-right">
+                          <i class="icon-graph font-large-1"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Widget-line-chart2" class="height-55 WidgetlineChart WidgetlineChartShadow mb-3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6 col-md-6 col-12">
+                <div class="card bg-danger">
+                  <div class="card-content">
+                    <div class="card-body pt-2 pb-0">
+                      <div class="media">
+                        <div class="media-body white text-left">
+                          <h3 class="font-large-1 mb-0">{{queryResult.allOpenItems}}</h3>
+                          <span>Open</span>
+                        </div>
+                        <div class="media-right white text-right">
+                          <i class="icon-wallet font-large-1"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Widget-line-chart2" class="height-55 WidgetlineChart WidgetlineChartShadow mb-3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6 col-md-6 col-12">
+                <div class="card bg-danger">
+                  <div class="card-content">
+                    <div class="card-body pt-2 pb-0">
+                      <div class="media">
+                        <div class="media-body white text-left">
+                          <h3 class="font-large-1 mb-0">{{queryResult.allReopenedItems}}</h3>
+                          <span>Re-Opened</span>
+                        </div>
+                        <div class="media-right white text-right">
+                          <i class="icon-wallet font-large-1"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Widget-line-chart2" class="height-55 WidgetlineChart WidgetlineChartShadow mb-3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-6 col-md-6 col-12">
+                <div class="card bg-dark">
+                  <div class="card-content">
+                    <div class="card-body pt-2 pb-0">
+                      <div class="media">
+                        <div class="media-body white text-left">
+                          <h3 class="font-large-1 mb-0">{{queryResult.allNewItems}}</h3>
+                          <span>New</span>
+                        </div>
+                        <div class="media-right white text-right">
+                          <i class="icon-wallet font-large-1"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="Widget-line-chart2" class="height-55 WidgetlineChart WidgetlineChartShadow mb-3">
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <div class="card bg-light mb-0 mt-0 pl-3 pt-2 mt-3">
+          <span class="text-bold-500 primary ml-0">Filters:</span>
+          <div class="form-group row mt-2">
+              <div class="form-group  col-xl-2 col-lg-6 col-md-12">
+                <select class="form-control form-control-md dropdown ml-2" id="" name="year" [(ngModel)]="selectedYear.id" (change)="GetDashboardReportDataOnYearChange()" placeholder="Select a year">
+                    <option value="" disabled selected>Filter via year</option>
+                    <option *ngFor="let year of yearList" [value]="year.id">{{year.name}}</option>
+                </select>
+              </div>
+              <div *ngIf="isGlobalAdminUser" class="form-group  col-xl-3 col-lg-6 col-md-12">
+                <select class="form-control ml-2" id="" (change)="GetDashboardReportDataOnYearChange()" name="organizationId" [(ngModel)]="organizationId" placeholder="Select an organization" >
+                    <option value="" disabled selected>Filter via organization</option>
+                    <option *ngFor="let org of organizationList" [value]="org.id">{{org.name}}</option>
+                </select>
+              </div>
+              <button class="btn btn-default ml-2" (click)="resetYearToCurrent()">Reset</button>
+              <button class="btn btn-default ml-2" (click)="randomize()">Toggle Chart</button>
+          </div>
+          <div class="row p-2">
+          <div class="col-xl-8 col-lg-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title mb-0">Incidence Statistics</h4>
+                </div>
+                <div class="card-content">
+                  <div class="card-body">
+                    <div style="display: block">
+                        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [colors]="chartColors"
+                          [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHovered($event)"
+                          (chartClick)="chartClicked($event)"></canvas>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-12">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="row card-body">
+                      <h4 class="card-title">Year Stats</h4>
+                    </div>
+                    <ul class="list-group">
+                      <li class="list-group-item text-left">
+                        <span class="badge bg-success float-right text-white">{{queryResult.closedItems}}</span> Closed Incidences
+                      </li>
+                      <li class="list-group-item text-left">
+                        <span class="badge bg-warning float-right text-white">{{queryResult.underReviewItems}}</span> Under Review Incidences
+                      </li>
+                      <li class="list-group-item text-left">
+                        <span class="badge bg-primary float-right text-white">{{queryResult.resolvedItems}}</span> Resolved Incidences
+                      </li>
+                      <li class="list-group-item text-left">
+                        <span class="badge bg-danger float-right text-white">{{queryResult.openItems}}</span> Open Incidences
+                      </li>
+                      <li class="list-group-item text-left">
+                        <span class="badge bg-danger float-right text-white">{{queryResult.reopenedItems}}</span> Re-opened Incidences
+                      </li>
+                      <li class="list-group-item text-left">
+                        <span class="badge bg-dark float-right text-white">{{queryResult.newItems}}</span> New Incidences
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+</div>

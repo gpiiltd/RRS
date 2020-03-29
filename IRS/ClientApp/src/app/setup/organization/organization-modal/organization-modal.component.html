@@ -1,0 +1,327 @@
+<!--User Profile Starts-->
+<!--Basic User Details Starts-->
+<form [formGroup]="orgEditForm" #formDir="ngForm" (ngSubmit)="submit()" role="form" class="form form-horizontal" id="orgFormId">
+  <section>
+    <div class="row text-left">
+      <!--Nav justification Starts-->
+      <div class="col-md-12 col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">{{ModalTitle}}</h4>
+          </div>
+          <div class="card-content">
+            <div *ngIf="orgEditForm.invalid && formDir.submitted" class="col-sm-8 alert alert-danger ml-3">
+                  <p><strong>Error: </strong>You have an invalid input in one of the tabs. Please check.</p>
+            </div>
+            <div class="card-body">
+              <ngb-tabset [justify]="currentJustify">
+                <ngb-tab title="Basic Details">
+                  <ng-template ngbTabContent>
+                    <h4 class="form-section"><i class="ft-briefcase"></i> General Info</h4>
+                    <div class="row">
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="code">Code:</label>
+                              <input type="text" id="code" class="form-control" placeholder="Code" formControlName="code" [ngClass]="{'is-invalid': orgEditForm.get('code').errors && (formDir.submitted || orgEditForm.get('code').touched) }">
+                              <div class="" *ngIf="orgEditForm.get('code').hasError('required') && (formDir.submitted || orgEditForm.get('code').touched)">Organization Code is required</div>
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="companyName">Organization Name:</label>
+                              <input type="text" id="companyName" class="form-control" placeholder="Name" formControlName="companyName" [ngClass]="{'is-invalid': orgEditForm.get('companyName').errors && (formDir.submitted || orgEditForm.get('companyName').touched) }">
+                              <div class="" *ngIf="orgEditForm.get('companyName').hasError('required') && (formDir.submitted || orgEditForm.get('companyName').touched)">Organization Name is required</div>
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="registrationNo">Reg No:</label>
+                              <input type="text" id="registrationNo" class="form-control" placeholder="Reg No" formControlName="registrationNo">
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="businessCategory">Business Category: </label>
+                              <input type="text" id="businessCategory" class="form-control" placeholder="Business Category" formControlName="businessCategory">
+                          </fieldset>                                
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="comment">Comment:</label>
+                              <textarea class="form-control" id="comment" formControlName="comment" rows="2" placeholder="Comment:"></textarea>
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="dateofEst">Date of Est:</label>
+                              <input
+                                class="form-control"
+                                placeholder="Date of Establishment"
+                                bsDatepicker
+                                formControlName="dateofEst"
+                                [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD', containerClass: 'theme-dark-blue' }">
+                          </fieldset>                                
+                      </div>
+                    </div>
+                    <h4 class="form-section"><i class="ft-user"></i> Hazard Settings</h4>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="hazardDefaultDepartmentId">Default Notification Dept: </label>
+                                  <select class="form-control" id="" formControlName="hazardDefaultDepartmentId" placeholder="Department">
+                                      <option value=""></option>
+                                      <option *ngFor="let dept of departmentList" [value]="dept.id">{{dept.name}}</option>
+                                  </select>
+                              </fieldset>                                
+                          </div>
+                      </div>
+                  </ng-template>
+                </ngb-tab>
+                <ngb-tab title="Contact Info">
+                  <ng-template ngbTabContent>
+                    <h4 class="form-section"><i class="ft-info"></i> Contact Info</h4>
+                    <div class="row">
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="email1">Email 1:</label>
+                              <input type="text" id="email1" class="form-control" placeholder="Email 1" formControlName="email1" [ngClass]="{'is-invalid': orgEditForm.get('email1').errors && (formDir.submitted || orgEditForm.get('email1').touched) }">
+                              <div class="" *ngIf="orgEditForm.get('email1').hasError('required') && (formDir.submitted || orgEditForm.get('email1').touched)">Email 1 is required</div>
+                              <div class="" *ngIf="orgEditForm.get('email1').hasError('email') && (formDir.submitted || orgEditForm.get('email1').touched)">Email must be a valid email address</div>
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                        <fieldset class="form-group">
+                            <label for="email2">Email 2:</label>
+                            <input type="text" id="email2" class="form-control" placeholder="Email 2" formControlName="email2" [ngClass]="{'is-invalid': orgEditForm.get('email2').errors && (formDir.submitted || orgEditForm.get('email2').touched) }">
+                            <div class="" *ngIf="orgEditForm.get('email2').hasError('email') && (formDir.submitted || orgEditForm.get('email2').touched)">Email must be a valid email address</div>
+                        </fieldset>                                
+                    </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="phone1">Phone 1:</label>
+                              <input type="text" id="phone1" class="form-control" placeholder="Phone 1" formControlName="phone1" [ngClass]="{'is-invalid': orgEditForm.get('phone1').errors && (formDir.submitted || orgEditForm.get('phone1').touched) }">
+                            <div class="" *ngIf="orgEditForm.get('phone1').hasError('required') && (formDir.submitted || orgEditForm.get('phone1').touched)">Phone 1 is required</div>
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="phone2">Phone 2: </label>
+                              <input type="text" id="phone2" class="form-control" placeholder="Phone 2" formControlName="phone2">
+                          </fieldset>                                
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="countryId">Country:</label>
+                              <select class="form-control" (change)="onCountryChange()" id="countryId" formControlName="countryId">
+                                <option value=""></option>
+                                <option *ngFor="let country of countryList" [value]="country.id">{{country.name}}</option>
+                            </select>
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="stateId">State:</label>
+                              <select class="form-control" (change)="onStateChange()" id="stateId" formControlName="stateId">
+                                <option value=""></option>
+                                <option *ngFor="let state of stateList" [value]="state.id">{{state.name}}</option>
+                              </select>
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                            <label for="cityId">City: </label>
+                              <select class="form-control" id="cityId" formControlName="cityId">
+                                <option value=""></option>
+                                <option *ngFor="let city of cityList" [value]="city.id">{{city.name}}</option>
+                            </select>
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="officeAddress">Address: </label>
+                              <textarea class="form-control" id="officeAddress" formControlName="officeAddress" rows="3" placeholder="Address:"></textarea>
+                          </fieldset>                                
+                      </div>
+                    </div>
+                    <h4 class="form-section"><i class="ft-user"></i> Contact Person</h4>
+                    <div class="row">
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="contactFirstName">First Name:</label>
+                              <input type="text" id="contactFirstName" class="form-control" placeholder="First Name" formControlName="contactFirstName">
+                          </fieldset>                                
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                        <fieldset class="form-group">
+                            <label for="contactMiddleName">Middle Name:</label>
+                            <input type="text" id="contactMiddleName" class="form-control" placeholder="Middle Name" formControlName="contactMiddleName">
+                        </fieldset>                                
+                    </div>
+                      <div class="col-xl-3 col-lg-6 col-md-12">
+                          <fieldset class="form-group">
+                              <label for="contactLastName">Last Name:</label>
+                              <input type="text" id="contactLastName" class="form-control" placeholder="Last Name" formControlName="contactLastName">
+                          </fieldset>                                
+                      </div>
+                    </div>
+                  </ng-template>
+                </ngb-tab>
+                <ngb-tab title="File Settings">
+                  <ng-template ngbTabContent>
+                    <h4 class="form-section"><i class="ft-info"></i> File Settings</h4>
+                      <div class="row">
+                          <div class="col-md-3 offset-md-9">
+                                <div class="form-group">
+                                    <label class="col-md-8 label-control" for="activateEmailSettings">Activate File Settings: </label>
+                                    <input type="checkbox" (change)="activateFileSettings = !activateFileSettings" id="activateFileSettings" class="mt-2 ml-1 float-right" placeholder="Middle Name" formControlName="activateFileSettings">
+                                </div> 
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="maxImageFileSize">Max Image File Size:</label>
+                                  <input type="text" id="maxImageFileSize" class="form-control" placeholder="Max Image File Size in MB" formControlName="maxImageFileSize" [ngClass]="{'is-invalid': orgEditForm.get('maxImageFileSize').errors && (formDir.submitted || orgEditForm.get('maxImageFileSize').touched) }">
+                                  <div class="" *ngIf="orgEditForm.get('maxImageFileSize').hasError('required') && (formDir.submitted || orgEditForm.get('maxImageFileSize').touched)">Max Image File Size is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="maxVideoFileSize">Max Video File Size:</label>
+                                  <input type="text" id="maxVideoFileSize" class="form-control" placeholder="Max Video File Size in MB" formControlName="maxVideoFileSize" [ngClass]="{'is-invalid': orgEditForm.get('maxVideoFileSize').errors && (formDir.submitted || orgEditForm.get('maxVideoFileSize').touched) }">
+                                  <div class="" *ngIf="orgEditForm.get('maxVideoFileSize').hasError('required') && (formDir.submitted || orgEditForm.get('maxVideoFileSize').touched)">Max Video File Size is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="acceptedVideoFileTypes">Accepted Video File Types:</label>
+                                <input type="text" id="acceptedVideoFileTypes" class="form-control" placeholder="comma seperated values e.g .mp4,.3gp" formControlName="acceptedVideoFileTypes" [ngClass]="{'is-invalid': orgEditForm.get('acceptedVideoFileTypes').errors && (formDir.submitted || orgEditForm.get('acceptedVideoFileTypes').touched) }">
+                                <div class="" *ngIf="orgEditForm.get('acceptedVideoFileTypes').hasError('required') && (formDir.submitted || orgEditForm.get('acceptedVideoFileTypes').touched)">Accepted Video File Types is required</div>
+                            </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="acceptedImageFileTypes">Accepted Image File Types: </label>
+                                <input type="text" id="acceptedImageFileTypes" class="form-control" placeholder="comma seperated values e.g .jpg,.png" formControlName="acceptedImageFileTypes" [ngClass]="{'is-invalid': orgEditForm.get('acceptedImageFileTypes').errors && (formDir.submitted || orgEditForm.get('acceptedImageFileTypes').touched) }">
+                                <div class="" *ngIf="orgEditForm.get('acceptedImageFileTypes').hasError('required') && (formDir.submitted || orgEditForm.get('acceptedImageFileTypes').touched)">Accepted Image File Types is required</div>
+                            </fieldset>                                
+                        </div>
+                      </div>
+                  </ng-template>
+                </ngb-tab>
+                <ngb-tab title="Email Settings">
+                  <ng-template ngbTabContent>
+                    <h4 class="form-section"><i class="ft-mail"></i> Email Settings</h4>
+                    <div class="row">
+                            <div class="col-md-4 offset-md-8">
+                                  <div class="form-group">
+                                      <label class="col-md-10 label-control" for="activateEmailSenderSettings">Activate Email Sender Settings: </label>
+                                      <input type="checkbox" (change)="activateEmailSenderSettings = !activateEmailSenderSettings" id="" class="mt-2 ml-1 float-right" placeholder="" formControlName="activateEmailSenderSettings">
+                                  </div> 
+                            </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="emailSenderName">Email Sender Name:</label>
+                                <input type="text" id="emailSenderName" class="form-control" placeholder="Email Sender Name" formControlName="emailSenderName" [ngClass]="{'is-invalid': orgEditForm.get('emailSenderName').errors && (formDir.submitted || orgEditForm.get('emailSenderName').touched) }">
+                                <div class="" *ngIf="orgEditForm.get('emailSenderName').hasError('required') && (formDir.submitted || orgEditForm.get('emailSenderName').touched)">Email Sender Name is required</div>
+                            </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="emailSendersEmail">Sender Email Address:</label>
+                                <input type="text" id="emailSendersEmail" class="form-control" placeholder="Sender's Email" formControlName="emailSendersEmail" [ngClass]="{'is-invalid': orgEditForm.get('emailSendersEmail').errors && (formDir.submitted || orgEditForm.get('emailSendersEmail').touched) }">
+                                <div class="" *ngIf="orgEditForm.get('emailSendersEmail').hasError('required') && (formDir.submitted || orgEditForm.get('emailSendersEmail').touched)">Sender Email is required</div>
+                            </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="hostName">Host Name:</label>
+                                <input type="text" id="hostName" class="form-control" placeholder="Host Name" formControlName="hostName" [ngClass]="{'is-invalid': orgEditForm.get('hostName').errors && (formDir.submitted || orgEditForm.get('hostName').touched) }">
+                                <div class="" *ngIf="orgEditForm.get('hostName').hasError('required') && (formDir.submitted || orgEditForm.get('hostName').touched)">Host Name is required</div>
+                            </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="emailSenderPassword">Sender Password: </label>
+                                <div class="inputWithIcon">
+                                    <input [type]="isPasswordHidden ? 'password' : 'test'" class="form-control mt-1" placeholder="Sender Password" formControlName="emailSenderPassword" [ngClass]="{'is-invalid': orgEditForm.get('emailSenderPassword').errors && (formDir.submitted || orgEditForm.get('emailSenderPassword').touched) }">
+                                    <i aria-hidden="true" (click)="hidePasswordToggle()" [ngClass]="isPasswordHidden ? 'ft-eye-off' : 'ft-eye'"></i>
+                                </div>
+                                <div class="" *ngIf="orgEditForm.get('emailSenderPassword').hasError('required') && (formDir.submitted || orgEditForm.get('emailSenderPassword').touched)">Email Sender Password is required</div>
+                            </fieldset>                                
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="port">Port No:</label>
+                                  <input type="text" id="port" class="form-control" placeholder="Email Server Port Number" formControlName="port" [ngClass]="{'is-invalid': orgEditForm.get('port').errors && (formDir.submitted || orgEditForm.get('port').touched) }">
+                                  <div class="" *ngIf="orgEditForm.get('port').hasError('required') && (formDir.submitted || orgEditForm.get('port').touched)">Port is required</div>
+                              </fieldset>                                
+                          </div>
+                      </div>
+                      <h4 class="form-section"><i class="ft-mail"></i> Email Receiver Details</h4>
+                      <div class="row">
+                          <div class="col-xl-6 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="emailRecipientAddresses">Email Notification Recipients: </label>
+                                  <textarea class="form-control" id="emailRecipientAddresses" formControlName="emailRecipientAddresses" rows="2" placeholder="e.g example1@gmail.com,example2@gmail.com"></textarea>
+                              </fieldset>                                
+                          </div>
+                      </div>
+                  </ng-template>
+                </ngb-tab>
+                <ngb-tab title="SMS Settings">
+                  <ng-template ngbTabContent>
+                    <h4 class="form-section"><i class="ft-mail"></i> SMS Settings</h4>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="form-group row">
+                            <label class="col-md-6 label-control" for="sendSMS">Send SMS: </label>
+                            <div class="col-md-6">
+                              <input type="checkbox" (change)="sendSMS = !sendSMS" id="sendSMS" class="mt-2" formControlName="sendSMS">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="form-group row">
+                          <label class="col-md-4 label-control" for="smsServiceProvider">SMS Provider: </label>
+                          <div class="col-md-8">
+                              <select class="form-control" id="smsServiceProvider" formControlName="smsServiceProvider" placeholder="SMS Provider" [ngClass]="{'is-invalid': orgEditForm.get('smsServiceProvider').errors && (formDir.submitted || orgEditForm.get('smsServiceProvider').touched) }">
+                                  <option value=""></option>
+                                  <option *ngFor="let sms of smsServiceProviderList" [value]="sms.id">{{sms.name}}</option>
+                              </select>
+                              <div class="" *ngIf="orgEditForm.get('smsServiceProvider').hasError('required') && (formDir.submitted || orgEditForm.get('smsServiceProvider').touched)">SMS Provider is required</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="form-section"><i class="ft-mail"></i> SMS Receiver Details</h4>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="smsRecipientNumbers">SMS Notification Recipients: </label>
+                                <input type="text" id="smsRecipientNumbers" class="form-control" placeholder="e.g +2347001234567,+2347001234568" formControlName="smsRecipientNumbers">
+                            </fieldset>                                
+                        </div>
+                    </div>
+                  </ng-template>
+                </ngb-tab>
+                </ngb-tabset>
+            </div>
+          </div>
+          <div class="form-actions right">
+              <button *ngIf="screenMode!=='view'" type="submit" class="btn btn-raised btn-primary mr-2" form="orgFormId" [disabled]="(orgEditForm.invalid && formDir.submitted )">Save</button>
+              <button type="button" class="btn btn-outline-dark mr-4" (click)="activeModal.dismiss('Cross click')">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </form>

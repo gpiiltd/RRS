@@ -1,0 +1,39 @@
+<form class="form form-horizontal" id="">
+      <section>
+        <div class="row text-left">
+          <!--Nav justification Starts-->
+          <div class="col-md-12 col-lg-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">Manage User Roles</h4>
+                <div class="form-actions right mb-0">
+                </div>
+              </div>
+              <div class="card-content">
+                <ejs-grid #grid id="userListGrid" [dataSource]='queryResult.items' [allowSorting]='true' [toolbar]='toolbarOptions' [allowFiltering]='false' [pageSettings]='pageSettings' [allowPaging]='true' height='415px' [allowExcelExport]='true' [allowPdfExport]='true' [allowResizing]='true' (toolbarClick)='toolbarClick($event)' [editSettings]='editSettings' [editSettings]='editSettings' >
+                  <e-columns>
+                      <e-column field='serialNumber' headerText='S/N' textAlign='left' width=50></e-column>
+                      <e-column field='staffNo' headerText='Staff No' textAlign='left' width=70></e-column>
+                      <e-column field='fullName' headerText='Full Name' textAlign='left' width=100></e-column>
+                      <e-column field='userName' headerText='Username' textAlign='left' width=70></e-column>
+                      <e-column field='jobTitle' headerText='Job Title' textAlign='Right' width=50 [visible]='false'></e-column>
+                      <e-column field='userDepartment.name' headerText='Department' textAlign='left' width=100></e-column>
+                      <e-column field='userOrganization.name' headerText='Organization' textAlign='left' width=100></e-column>
+                      <e-column field='userRoleString' headerText='Roles' textAlign='left' width=140></e-column>
+                      <e-column field='Action' headerText='' textAlign='Right' width='100'>
+                        <ng-template #template let-gridData>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-default" (click)="editRecord($event)">
+                              <i class="ft-edit"></i></button>
+                          </div>
+                        </ng-template>
+                      </e-column>
+                  </e-columns>
+                </ejs-grid>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+  

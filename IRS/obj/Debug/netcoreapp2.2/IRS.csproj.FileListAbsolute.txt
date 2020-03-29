@@ -1,0 +1,80 @@
+c:\users\fojekunle\source\repos\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.deps.json
+c:\users\fojekunle\source\repos\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.runtimeconfig.json
+c:\users\fojekunle\source\repos\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.runtimeconfig.dev.json
+c:\users\fojekunle\source\repos\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.dll
+c:\users\fojekunle\source\repos\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.pdb
+c:\users\fojekunle\source\repos\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.Views.dll
+c:\users\fojekunle\source\repos\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.Views.pdb
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.csprojAssemblyReference.cache
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.csproj.CoreCompileInputs.cache
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorAssemblyInfo.cache
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorAssemblyInfo.cs
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.AssemblyInfoInputs.cache
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.AssemblyInfo.cs
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.TagHelpers.input.cache
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.TagHelpers.output.cache
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorCoreGenerate.cache
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\Razor\Pages\Error.g.cshtml.cs
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.g.cshtml.cs
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorTargetAssemblyInfo.cache
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorTargetAssemblyInfo.cs
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.Views.pdb
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.dll
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.pdb
+c:\users\fojekunle\source\repos\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.csproj.CopyComplete
+c:\users\fojekunle\source\repos\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.DAL.dll
+c:\users\fojekunle\source\repos\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.DAL.pdb
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.deps.json
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.runtimeconfig.json
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.runtimeconfig.dev.json
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.dll
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.pdb
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.Views.dll
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.Views.pdb
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.DAL.dll
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.DAL.pdb
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.csprojAssemblyReference.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.csproj.CoreCompileInputs.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorAssemblyInfo.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorAssemblyInfo.cs
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.AssemblyInfoInputs.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.AssemblyInfo.cs
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.TagHelpers.input.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.TagHelpers.output.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorCoreGenerate.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\Razor\Pages\Error.g.cshtml.cs
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorTargetAssemblyInfo.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorTargetAssemblyInfo.cs
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.Views.pdb
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.csproj.CopyComplete
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.dll
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.pdb
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.deps.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.runtimeconfig.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.runtimeconfig.dev.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.dll
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.pdb
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.Views.dll
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.Views.pdb
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.DAL.dll
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\IRS.DAL.pdb
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.csprojAssemblyReference.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorAssemblyInfo.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorAssemblyInfo.cs
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.AssemblyInfoInputs.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.AssemblyInfo.cs
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.TagHelpers.input.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.TagHelpers.output.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorCoreGenerate.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorTargetAssemblyInfo.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.RazorTargetAssemblyInfo.cs
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.Views.pdb
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.csproj.CopyComplete
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.dll
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\IRS.pdb
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\Razor\Pages\Error.cshtml.g.cs
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.cshtml.g.cs

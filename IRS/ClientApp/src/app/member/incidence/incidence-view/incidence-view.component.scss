@@ -1,0 +1,157 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height:400px;
+    max-width:400px;
+    height:auto;
+    width:auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  ngb-carousel {
+    background-color: #18191F;
+  }
+
+    .picsum-img-wrapper {
+        min-height:500px;
+        min-width:500px;
+        position: relative
+    }
+
+    input[type="file"] {
+      display: none;
+  }
+
+  .videoMaxWrapper {
+    max-height: 700px;
+  }
+
+  .videoContainer {
+    height: 300px;
+    width:auto;
+    background-color: #18191F
+  }
+
+  #media {
+    display: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-height:300px;
+    max-width:300px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+ul {
+  height: 100px;
+  overflow: auto;
+}
+
+li {
+  color: #5F5D99;
+  font-size: 12pt;
+  text-decoration: none;
+  text-transform: uppercase;
+  max-width: 400px;
+}
+
+p {
+  display:inline;
+}
+
+.playlistItem {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  height: 100px;
+  max-width: 400px;
+}
+
+//angular-modal-gallery
+$text-color: #FFF;
+  $background: rgba(0, 0, 0, .7);
+
+  .my-app-custom-plain-container-row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .my-app-custom-image-row {
+      cursor: pointer;
+      height: 200px;
+      margin-right: 2px;
+      width: 200px;
+
+      &.after {
+        border-top: 2px;
+        cursor: pointer;
+        display: none;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .more {
+    background: $background;
+    cursor: pointer;
+    color: $text-color !important;
+    padding-top: 4px;
+    margin-left: 10px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    width: 50px;
+  }
+  //end 
+
+  //Rating setion
+  :host /deep/ ngb-rating span {
+    font-size: 1.5rem;
+}
+// For Star
+:host /deep/ .star {
+  font-size: 1.5rem;
+  color: #b0c4de;
+  // Filled Star
+  &.filled {
+    color: #FF8D60;
+  }
+  // Full Star
+  &.full {
+    color: #FF586B;
+  }
+  // Half Star
+  .half {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    color: #FF586B;
+    font-size: 2rem;    
+  }
+}
+:host /deep/ .star {
+  position: relative;  
+  display: inline-block;
+  font-size: 2rem;
+  color: #d3d3d3;
+}
+
+//end of Rating
+
+label span{
+  text-transform: capitalize;
+}

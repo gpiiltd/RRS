@@ -1,0 +1,10 @@
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.DAL\bin\Debug\netcoreapp3.0\IRS.DAL.deps.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.DAL\bin\Debug\netcoreapp3.0\IRS.DAL.runtimeconfig.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.DAL\bin\Debug\netcoreapp3.0\IRS.DAL.runtimeconfig.dev.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.DAL\bin\Debug\netcoreapp3.0\IRS.DAL.dll
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.DAL\bin\Debug\netcoreapp3.0\IRS.DAL.pdb
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.DAL\obj\Debug\netcoreapp3.0\IRS.DAL.csprojAssemblyReference.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.DAL\obj\Debug\netcoreapp3.0\IRS.DAL.AssemblyInfoInputs.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.DAL\obj\Debug\netcoreapp3.0\IRS.DAL.AssemblyInfo.cs
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.DAL\obj\Debug\netcoreapp3.0\IRS.DAL.dll
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.DAL\obj\Debug\netcoreapp3.0\IRS.DAL.pdb

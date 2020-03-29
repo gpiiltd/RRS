@@ -1,0 +1,118 @@
+<!--About section starts-->
+<form class="form form-horizontal">
+        <section id="about" *ngIf="currentPage === 'About'">
+            <div class="row text-left">
+                <div class="col-md-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">User Profile</h4>
+                            <div class="form-actions right">
+                                <a class="profile-image ml-2">
+                                    <img [src]="profilePhotoUrl" class="img-border gradient-summer width-200" alt="Card image">
+                                </a>
+                                <div class="right">
+                                    <span class="font-medium-2 text-uppercase">{{user?.firstName}}, {{user?.lastName}}</span>
+                                    <p class="grey font-small-2">{{user?.userOrganization?.name}}, {{user?.jobTitle}}</p>
+                                    <a class="btn btn-primary btn-raised" [routerLink]="['/profile/edit/', user.id]"><i class="fa fa-edit" ></i> Edit Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <span class="text-bold-500 primary">About Me:</span>
+                                    <span class="d-block overflow-hidden">{{user?.introduction}}
+                                    </span>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-lg-12">
+                                        <ul class="no-list-style">
+                                            <li class="mb-2">
+                                                    <span class="text-bold-500 primary"><a><i class="ft-home font-small-3"></i> Organization:</a></span>
+                                                    <span class="d-block overflow-hidden">{{user?.userOrganization?.name}}</span>
+                                                    <span class="primary"><a><i class="ft-map-pin font-small-3"></i> Department:</a></span>
+                                                    <span class="d-block overflow-hidden">{{user?.userDepartment?.name}}</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <ul class="no-list-style">
+                                                    <li class="mt-2">
+                                                        <span class="text-bold-500 primary"><a><i class="icon-present font-small-3"></i> Birthday:</a></span>
+                                                        <span class="d-block overflow-hidden" > {{ user?.dateOfBirth | date: 'dd.MM.yyyy' }} </span>
+                                                    </li>
+                                                    <li class="mt-2">
+                                                            <span class="text-bold-500 primary"><a><i class="ft-briefcase font-small-3"></i> Job Title:</a></span>
+                                                            <span class="d-block overflow-hidden">{{user?.jobTitle}}</span>
+                                                    </li>
+                                                    <li class="mt-2">
+                                                        <span class="text-bold-500 primary"><a><i class="ft-tag font-small-3"></i> StaffNo:</a></span>
+                                                        <span class="d-block overflow-hidden">{{user?.staffNo}}</span>
+                                                    </li>
+                                                    <li class="mt-2">
+                                                        <span class="text-bold-500 primary"><a><i class="ft-user font-small-3"></i> Gender:</a></span>
+                                                        <span class="d-block overflow-hidden">{{ userGenderList[user?.gender]?.name }}</span>
+                                                    </li>
+                                                    <li class="mb-2">
+                                                            <span class="text-bold-500 primary"><a><i class="ft-smartphone font-small-3"></i> Work Phone:</a></span>
+                                                            <span class="d-block overflow-hidden">{{user?.phone1}}</span>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <span class="text-bold-500 primary"><a><i class="ft-smartphone font-small-3"></i> Home Phome:</a></span>
+                                                            <span class="d-block overflow-hidden">{{user?.phone2}}</span>
+                                                        </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                    <ul class="no-list-style">
+                                                        <li class="mt-2">
+                                                            <span class="text-bold-500 primary"><a><i class="ft-map-pin font-small-3"></i> Deployment Area:</a></span>
+                                                            <span id="element-a" class="d-block overflow-hidden" > {{user?.areaOfDeployment?.name}} </span>
+                                                        </li>
+                                                            <li class="mt-2">
+                                                                    <span class="text-bold-500 primary"><a><i class="ft-map-pin font-small-3"></i> Deployment City:</a></span>
+                                                                    <span class="d-block overflow-hidden">{{user?.cityOfDeployment?.name}}</span>
+                                                                </li>
+                                                        <li class="mt-2">
+                                                            <span class="text-bold-500 primary"><a><i class="ft-map-pin font-small-3"></i> Deployment State:</a></span>
+                                                            <span class="d-block overflow-hidden">{{user?.stateOfDeployment?.name}}</span>
+                                                        </li>
+                                                        <li class="mt-2">
+                                                            <span class="text-bold-500 primary"><a><i class="ft-map-pin font-small-3"></i> Deployment Country:</a></span>
+                                                            <span class="d-block overflow-hidden">{{user?.countryOfDeployment?.name}}</span>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                                <span class="text-bold-500 primary"><a><i class="ft-mail font-small-3"></i> Work Email:</a></span>
+                                                                <span class="d-block overflow-hidden">{{user?.email1}}</span>
+                                                            </li>
+                                                            <li class="mb-2">
+                                                                    <span class="text-bold-500 primary"><a><i class="ft-mail font-small-3"></i> Other Email:</a></span>
+                                                                    <span class="d-block overflow-hidden">{{user?.email2}}</span>
+                                                                </li>
+                                                    </ul>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <ul class="no-list-style">
+                                                    <li class="mb-2">
+                                                        <span class="text-bold-500 primary"><a><i class="ft-calendar font-small-3"></i> Deployment Date:</a></span>
+                                                        <span class="d-block overflow-hidden" > {{ user?.dateOfDeployment | date: 'dd.MM.yyyy' }} </span>
+                                                    </li>
+                                                    <li class="mb-2">
+                                                        <span class="text-bold-500 primary"><a><i class="ft-calendar font-small-3"></i> SignOff Date:</a></span>
+                                                        <span class="d-block overflow-hidden" > {{ user?.dateOfSignOff | date: 'dd.MM.yyyy' }} </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About section ends-->
+        
+        </form>

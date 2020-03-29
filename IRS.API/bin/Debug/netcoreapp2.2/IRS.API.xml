@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IRS.API</name>
+    </assembly>
+    <members>
+        <member name="M:IRS.API.Helpers.Extensions.AddApplicationError(Microsoft.AspNetCore.Http.HttpResponse,System.String)">
+            <summary>  
+            custom HttpResponse extension method : for use in adding error message and COR headers to global exceptions for errors in Production environment
+            as COR headers are not added to http responses in Production environment. See startup.cs for usage 
+            </summary>  
+        </member>
+    </members>
+</doc>

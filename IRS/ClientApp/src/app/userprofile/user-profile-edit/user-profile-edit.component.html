@@ -1,0 +1,293 @@
+<!--User Profile Starts-->
+<!--Basic User Details Starts-->
+<form [formGroup]="userEditForm" #formDir="ngForm" (ngSubmit)="submit()" class="form form-horizontal" id="userEditFormId">
+    <section>
+      <div class="row text-left">
+        <!--Nav justification Starts-->
+        <div class="col-md-12 col-lg-12">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">{{ModalTitle}}</h4>
+              <div class="form-actions right" *ngIf="isOwnerProfileEdit">
+                  <a class="profile-image ml-2">
+                      <img [src]="profilePhotoUrl" class="img-border gradient-summer width-200" alt="Card image">
+                  </a>
+                  <div class="mr-1">
+                      <label for="file-upload" class="custom-file-upload btn btn-raised btn-raised btn-primary ml-4">
+                          <input id="file-upload" #fileInput (change)="uploadPhoto()" type="file"/>
+                            Upload Photo<i class="ft-paperclip ml-1"></i>
+                        </label>
+                  </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div *ngIf="userEditForm.invalid && formDir.submitted" class="col-sm-8 alert alert-danger ml-3">
+                    <p><strong>Error: </strong>You have an invalid input in one of the tabs. Please check.</p>
+              </div>
+              <div class="card-body">
+                <ngb-tabset [justify]="currentJustify">
+                  <ngb-tab title="Bio">
+                    <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-user"></i> Personal Info</h4>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="title">First Name:</label>
+                                  <input type="text" id="" class="form-control" placeholder="First Name" formControlName="firstName" [ngClass]="{'is-invalid': userEditForm.get('firstName').errors && (formDir.submitted || userEditForm.get('firstName').touched) }">
+                                  <div class="" *ngIf="userEditForm.get('firstName').hasError('required') && (formDir.submitted || userEditForm.get('firstName').touched)">First Name is required</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="description">Middle Name:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Description" formControlName="middleName">
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" id="" class="form-control" placeholder="Last Name" formControlName="lastName" [ngClass]="{'is-invalid': userEditForm.get('lastName').errors && (formDir.submitted || userEditForm.get('lastName').touched) }">
+                                <div class="" *ngIf="userEditForm.get('lastName').hasError('required') && (formDir.submitted || userEditForm.get('lastName').touched)">Last Name is required</div>
+                              </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="assignedOrganizationId">Alias: </label>
+                                <input type="text" id="" class="form-control" placeholder="Nick Name" formControlName="knownAs">
+                            </fieldset>                                
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="email1">Work Email:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Work Email" formControlName="email1" [ngClass]="{'is-invalid': userEditForm.get('email1').errors && (formDir.submitted || userEditForm.get('email1').touched) }">
+                                  <div class="" *ngIf="userEditForm.get('email1').hasError('required') && (formDir.submitted || userEditForm.get('email1').touched)">Work Email is required</div>
+                                  <div class="" *ngIf="userEditForm.get('email1').hasError('email') && (formDir.submitted || userEditForm.get('email1').touched)">Email must be a valid email address</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="email2">Other Email:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Other Email" formControlName="email2" [ngClass]="{'is-invalid': userEditForm.get('email2').errors && (formDir.submitted || userEditForm.get('email2').touched) }">
+                                  <div class="" *ngIf="userEditForm.get('email2').hasError('email') && (formDir.submitted || userEditForm.get('email2').touched)">Email must be a valid email address</div>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="phone1">Work Phone:</label>
+                                <input type="text" id="" class="form-control" placeholder="Work Phone" formControlName="phone1" [ngClass]="{'is-invalid': userEditForm.get('phone1').errors && (formDir.submitted || userEditForm.get('phone1').touched) }">
+                                <div class="" *ngIf="userEditForm.get('phone1').hasError('required') && (formDir.submitted || userEditForm.get('phone1').touched)">Work Phone is required</div>
+                              </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="phone2">Home Phone: </label>
+                                <input type="text" id="" class="form-control" placeholder="Home Phone" formControlName="phone2">
+                            </fieldset>                                
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="introduction">About Me:</label>
+                                <textarea class="form-control" id="" formControlName="introduction" rows="2" placeholder="About Me:"></textarea>
+                            </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="dateOfBirth">Date of Birth:</label>
+                                <input
+                                    class="form-control"
+                                    placeholder="Date of Birth"
+                                    bsDatepicker
+                                    formControlName="dateOfBirth"
+                                    [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD', containerClass: 'theme-dark-blue' }">
+                            </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="gender">Gender:</label>
+                                <select class="form-control" id="" formControlName="gender">
+                                    <option value=""></option>
+                                    <option *ngFor="let ug of userGenderList" [value]="ug.id">{{ug.name}}</option>
+                                </select>
+                            </fieldset>                                
+                        </div>
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab>
+                    <ng-template ngbTabTitle>Job Details</ng-template>
+                    <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-info"></i> Job Details</h4>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="jobTitle">Job Title:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Job Title" formControlName="jobTitle" [ngClass]="{'is-invalid': userEditForm.get('jobTitle').errors && (formDir.submitted || userEditForm.get('jobTitle').touched) }">
+                                  <div class="" *ngIf="userEditForm.get('jobTitle').hasError('required') && (formDir.submitted || userEditForm.get('jobTitle').touched)">Job Title is required</div>
+                              </fieldset>                          
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="staffNo">Staff No:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Staff No" formControlName="staffNo">
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="staffNo">Preferred Contact Method:</label>
+                                  <select class="form-control" id="" formControlName="preferredContactMethod" placeholder="Preferred Contact Method">
+                                      <option value=""></option>
+                                      <option *ngFor="let uc of userPreferredContactList" [value]="uc.id">{{uc.name}}</option>
+                                  </select>
+                              </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="phone1">Organization:</label>
+                                <select class="form-control" id="" (change)="onOrganizationChange()" formControlName="organizationId" placeholder="Organization" [ngClass]="{'is-invalid': userEditForm.get('organizationId').errors && (formDir.submitted || userEditForm.get('organizationId').touched) }">
+                                    <option value=""></option>
+                                    <option *ngFor="let org of organizationList" [value]="org.id">{{org.name}}</option>
+                                </select>
+                                <div class="" *ngIf="userEditForm.get('organizationId').hasError('required') && (formDir.submitted || userEditForm.get('organizationId').touched)">The User's Organization is required</div>
+                              </fieldset>                       
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="phone2">Department: </label>
+                                  <select class="form-control" id="" formControlName="departmentId" placeholder="Department" [ngClass]="{'is-invalid': userEditForm.get('departmentId').errors && (formDir.submitted || userEditForm.get('departmentId').touched) }">
+                                      <option value=""></option>
+                                      <option *ngFor="let dept of departmentList" [value]="dept.id">{{dept.name}}</option>
+                                  </select>
+                                  <div class="" *ngIf="userEditForm.get('departmentId').hasError('required') && (formDir.submitted || userEditForm.get('departmentId').touched)">The User's Department is required</div>
+                              </fieldset>                                
+                          </div>
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab>
+                      <ng-template ngbTabTitle>Deployment Info</ng-template>
+                      <ng-template ngbTabContent>
+                        <h4 class="form-section"><i class="ft-info"></i> Deployment Info</h4>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label for="dateOfDeployment">Deployment Date:</label>
+                                    <input
+                                      class="form-control"
+                                      placeholder="Date of Deployment"
+                                      bsDatepicker
+                                      formControlName="dateOfDeployment"
+                                      [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD', containerClass: 'theme-dark-blue' }"
+                                      [ngClass]="{'is-invalid': userEditForm.get('dateOfDeployment').errors && (formDir.submitted || userEditForm.get('dateOfDeployment').touched) }">
+                                      <div class="" *ngIf="userEditForm.get('dateOfDeployment').hasError('required') && (formDir.submitted || userEditForm.get('dateOfDeployment').touched)">The Deploymnet/Start Date of the employee is required</div>
+                                </fieldset>                          
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label for="dateOfSignOff">Date of SignOff:</label>
+                                    <input
+                                        class="form-control"
+                                        placeholder="Date of SignOff"
+                                        bsDatepicker
+                                        formControlName="dateOfSignOff"
+                                        [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD', containerClass: 'theme-dark-blue' }"
+                                        [ngClass]="{'is-invalid': (userEditForm.get('dateOfSignOff').errors && (formDir.submitted || userEditForm.get('dateOfSignOff').touched)) || (userEditForm.hasError('unsequencial') && (formDir.submitted || userEditForm.get('dateOfSignOff').touched)) }">
+                                        <div class="" *ngIf="userEditForm.hasError('unsequencial') && userEditForm.get('dateOfSignOff').touched">The Sign Off Date must be equal or greater than the Deploymnet Date</div>
+                                </fieldset>                                
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label for="countryOfDeploymentId">Country:</label>
+                                    <select class="form-control" id="" (change)="onCountryChange()" formControlName="countryOfDeploymentId" placeholder="Country of Deployment" >
+                                        <option value=""></option>
+                                        <option *ngFor="let country of countryList" value="{{country.id}}">{{country.name}}</option>
+                                      </select>
+                                </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="stateOfDeploymentId">State:</label>
+                                  <select class="form-control" id="" (change)="onStateChange()" formControlName="stateOfDeploymentId" placeholder="State of Deployment">
+                                      <option value=""></option>
+                                      <option *ngFor="let s of stateList" value="{{s.id}}">{{s.name}}</option>
+                                    </select>
+                              </fieldset>                                
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label for="cityOfDeploymentId">City:</label>
+                                    <select class="form-control" id="" (change)="onCityChange()" formControlName="cityOfDeploymentId" placeholder="City of Deployment">
+                                        <option value=""></option>
+                                        <option *ngFor="let c of cityList" value="{{c.id}}">{{c.name}}</option>
+                                      </select>
+                                </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="areaOfDeploymentId">Area:</label>
+                                  <select class="form-control" id="" placeholder="Area of Deployment" formControlName="areaOfDeploymentId">
+                                      <option value=""></option>
+                                      <option *ngFor="let lga of areaList" value="{{lga.id}}">{{lga.name}}</option>
+                                    </select>
+                              </fieldset>                                
+                          </div>
+                        </div>
+                      </ng-template>
+                    </ngb-tab>
+                  <ngb-tab title="User Credentials">
+                    <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-lock"></i> User Credentials</h4>
+                      <div class="row">
+                          <div class="col-md-2 col-lg-2 col-md-2">
+                              <fieldset class="form-group">
+                                <label class="" for="sendSMS">Enable User: </label>
+                                <div class="col-md-6">
+                                  <input type="checkbox" id="isActive" class="mt-2" formControlName="isActive">
+                                </div>
+                              </fieldset>                 
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="mobileAppLoginPattern">User's Mobile App Login Pattern:</label>
+                                  <input type="text" id="mobileAppLoginPattern" class="form-control" placeholder="Mobile App Login Pattern" formControlName="mobileAppLoginPattern">
+                              </fieldset>             
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label class="" for="username">Username: </label>
+                                    <input type="text" id="userName" class="form-control" placeholder="Username" formControlName="userName" [ngClass]="{'is-invalid': userEditForm.get('userName').errors && (formDir.submitted || userEditForm.get('userName').touched) }">
+                                <div class="" *ngIf="userEditForm.get('userName').hasError('required') && (formDir.submitted || userEditForm.get('userName').touched)">Username is required</div>
+                                </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label class="" for="password">Password: </label>
+                                  <input type="password" id="password" class="form-control" name="password" placeholder="Password" formControlName="password">
+                              </fieldset>                                
+                          </div>
+                        </div>
+                    </ng-template>
+                  </ngb-tab>
+                  </ngb-tabset>
+              </div>
+            </div>
+            <div class="form-actions right">
+              <button type="submit" class="btn btn-raised btn-primary mr-2" form="userEditFormId" [disabled]="(userEditForm.invalid && formDir.submitted)">
+                  <i class="fa fa-check-square-o"></i> Save
+              </button>
+              <button type="button" class="btn btn-raised btn-warning mr-2" [routerLink]="['/dashboard']" >
+                <i class="ft-x"></i> Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </form>

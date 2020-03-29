@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md-3 img-wrapper" *ngFor="let photo of photos">
+    <a href="{{photo.source}}" target="_blank"><img [src]="photo.image" class="img-thumbnail p-1" alt=""></a>
+    <div class="offset-md-8">
+      <button type="button" class="btn btn-md"
+        (click)="deletePhoto(photo.id)"><i class="ft-trash-2"></i></button>
+    </div>
+  </div>
+</div>

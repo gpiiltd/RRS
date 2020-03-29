@@ -1,0 +1,130 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>True</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dtos\**" />
+    <EmbeddedResource Remove="Dtos\**" />
+    <None Remove="Dtos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190521190225_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190521192202_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190521193413_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190521201310_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190521201720_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190521202100_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190522115150_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190522120247_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190523104314_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190524094719_FixIncidenceAssignee.cs" />
+    <Compile Remove="Migrations\20190524101816_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190527134510_UpdateUserDepartmentAndOrganization.cs" />
+    <Compile Remove="Migrations\20190529141000_SeedCountryStateAndAreaData.cs" />
+    <Compile Remove="Migrations\20190529173643_UserOrganizationDepartments.cs" />
+    <Compile Remove="Migrations\20190620095623_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190620111720_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190625124723_AddRecordTrackingInModels.cs" />
+    <Compile Remove="Migrations\20190625130858_AddRecordTrackingInModels.cs" />
+    <Compile Remove="Migrations\20190625131915_ImplementUserICreatable.cs" />
+    <Compile Remove="Migrations\20190625132713_AddChangeTrackingInModels.cs" />
+    <Compile Remove="Migrations\20190806181555_IncidenceFieldsUpdate.cs" />
+    <Compile Remove="Migrations\20190806181555_IncidenceFieldsUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190806184355_IncidenceFieldsUpdate.cs" />
+    <Compile Remove="Migrations\20190806184355_IncidenceFieldsUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190808171345_FileUploadChannels.cs" />
+    <Compile Remove="Migrations\20190808171345_FileUploadChannels.Designer.cs" />
+    <Compile Remove="Migrations\20190808171459_FileUploadChannels.cs" />
+    <Compile Remove="Migrations\20190808171459_FileUploadChannels.Designer.cs" />
+    <Compile Remove="Migrations\20190808190827_FileUploadChannels.cs" />
+    <Compile Remove="Migrations\20190808190827_FileUploadChannels.Designer.cs" />
+    <Compile Remove="Migrations\20190808192455_FileUploadChannels.cs" />
+    <Compile Remove="Migrations\20190808192455_FileUploadChannels.Designer.cs" />
+    <Compile Remove="Migrations\20190808192703_FileUploadChannels.cs" />
+    <Compile Remove="Migrations\20190808192703_FileUploadChannels.Designer.cs" />
+    <Compile Remove="Migrations\20190828112112_IncidenceTypeDepartmentMapping.cs" />
+    <Compile Remove="Migrations\20190828112112_IncidenceTypeDepartmentMapping.Designer.cs" />
+    <Compile Remove="Migrations\20190901104421_EmailNotificationPortChange.cs" />
+    <Compile Remove="Migrations\20190901104421_EmailNotificationPortChange.Designer.cs" />
+    <Compile Remove="Migrations\20190912125154_DepartmentUpdate.cs" />
+    <Compile Remove="Migrations\20190912125154_DepartmentUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190912134136_DepartmentUpdate.cs" />
+    <Compile Remove="Migrations\20190912134136_DepartmentUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190912134300_EmailSettingsUpdate.cs" />
+    <Compile Remove="Migrations\20190912134300_EmailSettingsUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022171930_IncidenceCommentFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022171930_IncidenceCommentFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022175027_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022175027_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022183531_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022183531_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022184525_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022184525_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022184755_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022184755_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022192317_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022192317_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022192505_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022192505_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022192737_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022192737_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022194408_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022194408_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022194743_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022194743_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022195522_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022195522_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022200051_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022200051_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022200208_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022200208_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191022225221_IncidenceFieldsFix.cs" />
+    <Compile Remove="Migrations\20191022225221_IncidenceFieldsFix.Designer.cs" />
+    <Compile Remove="Migrations\20191022225700_IncidenceFieldsAfterFix.cs" />
+    <Compile Remove="Migrations\20191022225700_IncidenceFieldsAfterFix.Designer.cs" />
+    <Compile Remove="Migrations\20191022230536_IncidenceReporterFieldUpdate.cs" />
+    <Compile Remove="Migrations\20191022230536_IncidenceReporterFieldUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191104193711_EventLocationUpdate.cs" />
+    <Compile Remove="Migrations\20191104193711_EventLocationUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191114155027_MobileAppUserLoginUpdate.cs" />
+    <Compile Remove="Migrations\20191114155027_MobileAppUserLoginUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20191114155741_MobileAppUserLoginUpdate.cs" />
+    <Compile Remove="Migrations\20191114155741_MobileAppUserLoginUpdate.Designer.cs" />
+    <Compile Remove="Models\Makes.cs" />
+    <Compile Remove="Models\Model.cs" />
+    <Compile Remove="Models\QueryResources\Hazard\IncidenceDashboardQuery.cs" />
+    <Compile Remove="Models\QueryResources\Hazard\IncidenceDashboardQueryResource.cs" />
+    <Compile Remove="Models\QueryResources\Hazard\IncidenceStatusQuery.cs" />
+    <Compile Remove="Models\QueryResources\Hazard\IncidenceStatusQueryResource.cs" />
+    <Compile Remove="Models\QueryResources\Hazard\IncidenceTypeDepartmentQuery.cs" />
+    <Compile Remove="Models\QueryResources\Hazard\IncidenceTypeDepartmentQueryResource.cs" />
+    <Compile Remove="Models\QueryResources\Hazard\IncidenceTypeQuery.cs" />
+    <Compile Remove="Models\QueryResources\Hazard\IncidenceTypeQueryResource.cs" />
+    <Compile Remove="Models\Video.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Incidences\" />
+  </ItemGroup>
+
+</Project>

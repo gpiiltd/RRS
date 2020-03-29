@@ -1,0 +1,253 @@
+<!--User Profile Starts-->
+<!--Basic User Details Starts-->
+<form class="form form-horizontal">
+    
+    <section>
+      <div class="row text-left">
+        <!--Nav justification Starts-->
+        <div class="col-md-12 col-lg-12">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">View User</h4>
+            </div>
+            <fieldset [disabled]="true">
+            <div class="card-content">
+              <div class="card-body">
+                <ngb-tabset [justify]="currentJustify">
+                  <ngb-tab title="Bio">
+                    <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-user"></i> Personal Info</h4>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="title">Title:</label>
+                                  <input type="text" id="" class="form-control" placeholder="First Name" name="firstname" [(ngModel)]="user.firstName" >
+                                  
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="description">Middle Name:</label>
+                                  <input type="text" id="" class="form-control" placeholder="Description" name="username" [(ngModel)]="user.middleName">
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" id="" class="form-control" placeholder="Last Name" name="lastname" [(ngModel)]="user.lastName" >
+                              </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="assignedOrganizationId">Alias: </label>
+                                <input type="text" id="" class="form-control" placeholder="Nick Name" name="knownas" [(ngModel)]="user.knownAs">
+                            </fieldset>                                
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="title">Work Email:</label>
+                                  <input type="text" id="" class="form-control" placeholder="" name="email1" [(ngModel)]="user.email1" >
+                                  
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="description">Other Email :</label>
+                                  <input type="text" id="" class="form-control" placeholder="" name="email2" [(ngModel)]="user.email2">
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="lastName">Work Phone:</label>
+                                <input type="text" id="" class="form-control" placeholder="" name="phone1" [(ngModel)]="user.phone1" >
+                              </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12">
+                            <fieldset class="form-group">
+                                <label for="assignedOrganizationId">Home Phone: </label>
+                                <input type="text" id="" class="form-control" placeholder="" name="phone2" [(ngModel)]="user.phone2">
+                            </fieldset>                                
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="dateOfBirth">Date of Birth:</label>
+                                  <input type="date" id="" class="form-control" name="dateOfBirth" [value]="user.dateOfBirth | date:'yyyy-MM-dd'">
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="gender">Gender:</label>
+                                  <select class="form-control" id="" name="gender" [(ngModel)]="user.gender">
+                                      <option value=""></option>
+                                      <option *ngFor="let ug of userGenderList" [value]="ug.id">{{ug.name}}</option>
+                                  </select>
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-6 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="introduction">About Me:</label>
+                                  <textarea id="userinput8" rows="4" class="form-control border-primary" name="bio">{{user.introduction}}</textarea>
+                              </fieldset>                                
+                          </div>
+                        </div>
+
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab>
+                    <ng-template ngbTabTitle>Job Details</ng-template>
+                    <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-info"></i> Job Details</h4>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="jobTitle">Job Title:</label>
+                                  <input type="text" id="userinput1" class="form-control border-primary" name="jobTitle" [(ngModel)]="user.jobTitle">
+                              </fieldset>                          
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="staffNo">Staff No:</label>
+                                  <input type="text" id="userinput2" class="form-control border-primary" name="staffNo" [(ngModel)]="user.staffNo">
+                              </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="staffNo">Preferred Contact Method:</label>
+                                  <select class="form-control" id="" name="preferredContactMethod" [(ngModel)]="user.preferredContactMethod">
+                                      <option value=""></option>
+                                      <option *ngFor="let uc of userPreferredContactList" [value]="uc.id">{{uc.name}}</option>
+                                  </select>
+                              </fieldset>                                
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-12" *ngIf="isGlobalAdminUser">
+                            <fieldset class="form-group">
+                                <label for="phone1">Organization:</label>
+                                <select class="form-control" id="" name="organizationId" [(ngModel)]="user.userOrganization.id">
+                                    <option value=""></option>
+                                    <option *ngFor="let org of organizationList" [value]="org.id">{{org.name}}</option>
+                                </select>
+                              </fieldset>                       
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="phone2">Department: </label>
+                                  <select class="form-control" id="" name="departmentId" [(ngModel)]="user.userDepartment.id">
+                                      <option value=""></option>
+                                      <option *ngFor="let dept of departmentList" [value]="dept.id">{{dept.name}}</option>
+                                  </select>
+                              </fieldset>                                
+                          </div>
+                      </div>
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab>
+                      <ng-template ngbTabTitle>Deployment Info</ng-template>
+                      <ng-template ngbTabContent>
+                        <h4 class="form-section"><i class="ft-info"></i> Deployment Info</h4>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label for="dateOfDeployment">Deployment Date:</label>
+                                    <input type="date" id="" class="form-control" name="date" [value]="user.dateOfDeployment | date:'yyyy-MM-dd'">
+                                </fieldset>                          
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label for="dateOfSignOff">Date of SignOff:</label>
+                                    <input type="date" id="" class="form-control" name="date" [value]="user.dateOfSignOff | date:'yyyy-MM-dd'">
+                                </fieldset>                                
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label for="countryOfDeploymentId">Country:</label>
+                                    <select class="form-control" id="" name="countryOfDeployment" [(ngModel)]="user.countryOfDeploymentId" >
+                                        <option value=""></option>
+                                        <option *ngFor="let country of countryList" value="{{country.id}}">{{country.name}}</option>
+                                      </select>
+                                </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="stateOfDeploymentId">State:</label>
+                                  <select class="form-control" id="" name="stateOfDeploymentId" [(ngModel)]="user.stateOfDeploymentId" >
+                                      <option value=""></option>
+                                      <option *ngFor="let s of stateList" value="{{s.id}}">{{s.name}}</option>
+                                    </select>
+                              </fieldset>                                
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label for="cityOfDeploymentId">City:</label>
+                                    <select class="form-control" id="" name="cityOfDeploymentId" [(ngModel)]="user.cityOfDeploymentId">
+                                        <option value=""></option>
+                                        <option *ngFor="let city of cityList" value="{{city.id}}">{{city.name}}</option>
+                                      </select>
+                                </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="areaOfDeploymentId">Area:</label>
+                                  <select class="form-control" id="" name="areaOfDeploymentId" [(ngModel)]="user.areaOfDeploymentId">
+                                      <option value=""></option>
+                                      <option *ngFor="let lga of areaList" value="{{lga.id}}">{{lga.name}}</option>
+                                    </select>
+                              </fieldset>                                
+                          </div>
+                        </div>
+                      </ng-template>
+                    </ngb-tab>
+                  <ngb-tab title="User Credentials">
+                    <ng-template ngbTabContent>
+                      <h4 class="form-section"><i class="ft-lock"></i> User Credentials</h4>
+                      <div class="row">
+                          <div class="col-md-2 col-lg-2 col-md-2">
+                              <fieldset class="form-group">
+                                <label class="" for="sendSMS">Enable User: </label>
+                                <div class="col-md-6">
+                                  <input type="checkbox" id="isActive" class="mt-2" name="username" [(ngModel)]="user.isActive">
+                                </div>
+                              </fieldset>                 
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label for="mobileAppLoginPattern">User's Mobile App Login Pattern:</label>
+                                  <input type="text" id="mobileAppLoginPattern" class="form-control" placeholder="Mobile App Login Pattern" name="user.mobileAppLoginPattern" [(ngModel)]="mobileAppLoginPattern">
+                              </fieldset>             
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                                <fieldset class="form-group">
+                                    <label class="" for="username">Username: </label>
+                                    <input type="text" id="userName" class="form-control" placeholder="Username" name="userName" [(ngModel)]="user.userName" >
+                                </fieldset>                                
+                          </div>
+                          <div class="col-xl-3 col-lg-6 col-md-12">
+                              <fieldset class="form-group">
+                                  <label class="" for="password">Password: </label>
+                                  <input type="password" id="password" class="form-control" name="password" placeholder="Password" name="password" [(ngModel)]="user.password" >
+                              </fieldset>                                
+                          </div>
+                        </div>
+                    </ng-template>
+                  </ngb-tab>
+                  </ngb-tabset>
+              </div>
+            </div>
+          </fieldset>
+            <div class="form-actions right">
+                <button type="button" class="btn btn-raised btn-warning mr-2" [routerLink]="['/setup/users']">
+                  <i class="ft-x"></i> Cancel
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </form>

@@ -1,0 +1,48 @@
+ <form class="form form-horizontal" id="">
+    <section>
+      <div class="row text-left">
+        <!--Nav justification Starts-->
+        <div class="col-md-12 col-lg-12">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">Users</h4>
+              <div class="form-actions right mb-0">
+                <p>
+                    <a (click)="createRecord()" class="btn btn-raised btn-raised btn-primary">
+                        <i class="fa fa-edit"></i> New User
+                    </a>
+                </p>
+            </div>
+            </div>
+            <div class="card-content">
+              <ejs-grid #grid id="userListGrid" [dataSource]='queryResult.items' [allowSorting]='true' [toolbar]='toolbarOptions' [allowFiltering]='false' [pageSettings]='pageSettings' [allowPaging]='true' height='415px' [allowExcelExport]='true' [allowPdfExport]='true' [allowResizing]='true' (toolbarClick)='toolbarClick($event)' [editSettings]='editSettings' [editSettings]='editSettings' >
+                <e-columns>
+                    <e-column field='serialNumber' headerText='S/N' textAlign='Right' width=50></e-column>
+                    <e-column field='id' headerText='Id' textAlign='Right' width=50 [visible]='false'></e-column>
+                    <e-column field='fullName' headerText='Full Name' textAlign='Right' width=120></e-column>
+                    <e-column field='knownAs' headerText='Alias' width=70></e-column>
+                    <e-column field='userName' headerText='Username' width=70></e-column>
+                    <e-column field='jobTitle' headerText='Job Title' width=70></e-column>
+                    <e-column field='stateOfDeployment.name' headerText='State of Deployment' width=70></e-column>
+                    <e-column field='userDepartment.name' headerText='Department' width=70></e-column>
+                    <e-column field='userOrganization.name' headerText='Organization' width=70></e-column>
+                    <e-column field='Action' headerText='' textAlign='Right' width='120'>
+                      <ng-template #template let-gridData>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default" (click)='viewRecord($event)'>
+                            <i class="ft-clipboard"></i></button>
+                          <button type="button" class="btn btn-default" (click)='editRecord($event)'>
+                            <i class="ft-edit"></i></button>
+                          <button type="button" class="btn btn-default" (click)='deleteRecord($event)'>
+                            <i class="ft-trash-2"></i></button>
+                        </div>
+                      </ng-template>
+                    </e-column>
+                </e-columns>
+              </ejs-grid>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </form>

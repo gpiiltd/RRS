@@ -1,0 +1,3250 @@
+﻿[
+  {
+    "CountryList": {
+      "Id": 1,
+      "Name":  "Nigeria",
+      "StateList": {
+        "Name": "Abia",
+        "Id": 1,
+        "Locals": [
+          {
+            "Name": "Aba South",
+            "Id": 1
+          },
+          {
+            "Name": "Arochukwu",
+            "Id": 2
+          },
+          {
+            "Name": "Bende",
+            "Id": 3
+          },
+          {
+            "Name": "Ikwuano",
+            "Id": 4
+          },
+          {
+            "Name": "Isiala Ngwa North",
+            "Id": 5
+          },
+          {
+            "Name": "Isiala Ngwa South",
+            "Id": 6
+          },
+          {
+            "Name": "Isuikwuato",
+            "Id": 7
+          },
+          {
+            "Name": "Obi Ngwa",
+            "Id": 8
+          },
+          {
+            "Name": "Ohafia",
+            "Id": 9
+          },
+          {
+            "Name": "Osisioma",
+            "Id": 10
+          },
+          {
+            "Name": "Ugwunagbo",
+            "Id": 11
+          },
+          {
+            "Name": "Ukwa East",
+            "Id": 12
+          },
+          {
+            "Name": "Ukwa West",
+            "Id": 13
+          },
+          {
+            "Name": "Umuahia North",
+            "Id": 14
+          },
+          {
+            "Name": "Umuahia South",
+            "Id": 15
+          },
+          {
+            "Name": "Umu Nneochi",
+            "Id": 16
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Adamawa",
+        "Id": 2,
+        "Locals": [
+          {
+            "Name": "Fufure",
+            "Id": 1
+          },
+          {
+            "Name": "Ganye",
+            "Id": 2
+          },
+          {
+            "Name": "Gayuk",
+            "Id": 3
+          },
+          {
+            "Name": "Gombi",
+            "Id": 4
+          },
+          {
+            "Name": "Grie",
+            "Id": 5
+          },
+          {
+            "Name": "Hong",
+            "Id": 6
+          },
+          {
+            "Name": "Jada",
+            "Id": 7
+          },
+          {
+            "Name": "Lamurde",
+            "Id": 8
+          },
+          {
+            "Name": "Madagali",
+            "Id": 9
+          },
+          {
+            "Name": "Maiha",
+            "Id": 10
+          },
+          {
+            "Name": "Mayo Belwa",
+            "Id": 11
+          },
+          {
+            "Name": "Michika",
+            "Id": 12
+          },
+          {
+            "Name": "Mubi North",
+            "Id": 13
+          },
+          {
+            "Name": "Mubi South",
+            "Id": 14
+          },
+          {
+            "Name": "Numan",
+            "Id": 15
+          },
+          {
+            "Name": "Shelleng",
+            "Id": 16
+          },
+          {
+            "Name": "Song",
+            "Id": 17
+          },
+          {
+            "Name": "Toungo",
+            "Id": 18
+          },
+          {
+            "Name": "Yola North",
+            "Id": 19
+          },
+          {
+            "Name": "Yola South",
+            "Id": 20
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Akwa Ibom",
+        "Id": 3,
+        "Locals": [
+          {
+            "Name": "Eastern Obolo",
+            "Id": 1
+          },
+          {
+            "Name": "Eket",
+            "Id": 2
+          },
+          {
+            "Name": "Esit Eket",
+            "Id": 3
+          },
+          {
+            "Name": "Essien Udim",
+            "Id": 4
+          },
+          {
+            "Name": "Etim Ekpo",
+            "Id": 5
+          },
+          {
+            "Name": "Etinan",
+            "Id": 6
+          },
+          {
+            "Name": "Ibeno",
+            "Id": 7
+          },
+          {
+            "Name": "Ibesikpo Asutan",
+            "Id": 8
+          },
+          {
+            "Name": "Ibiono-Ibom",
+            "Id": 9
+          },
+          {
+            "Name": "Ika",
+            "Id": 10
+          },
+          {
+            "Name": "Ikono",
+            "Id": 11
+          },
+          {
+            "Name": "Ikot Abasi",
+            "Id": 12
+          },
+          {
+            "Name": "Ikot Ekpene",
+            "Id": 13
+          },
+          {
+            "Name": "Ini",
+            "Id": 14
+          },
+          {
+            "Name": "Itu",
+            "Id": 15
+          },
+          {
+            "Name": "Mbo",
+            "Id": 16
+          },
+          {
+            "Name": "Mkpat-Enin",
+            "Id": 17
+          },
+          {
+            "Name": "Nsit-Atai",
+            "Id": 18
+          },
+          {
+            "Name": "Nsit-Ibom",
+            "Id": 19
+          },
+          {
+            "Name": "Nsit-Ubium",
+            "Id": 20
+          },
+          {
+            "Name": "Obot Akara",
+            "Id": 21
+          },
+          {
+            "Name": "Okobo",
+            "Id": 22
+          },
+          {
+            "Name": "Onna",
+            "Id": 23
+          },
+          {
+            "Name": "Oron",
+            "Id": 24
+          },
+          {
+            "Name": "Oruk Anam",
+            "Id": 25
+          },
+          {
+            "Name": "Udung-Uko",
+            "Id": 26
+          },
+          {
+            "Name": "Ukanafun",
+            "Id": 27
+          },
+          {
+            "Name": "Uruan",
+            "Id": 28
+          },
+          {
+            "Name": "Urue-Offong/Oruko",
+            "Id": 29
+          },
+          {
+            "Name": "Uyo",
+            "Id": 30
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Anambra",
+        "Id": 4,
+        "Locals": [
+          {
+            "Name": "Anambra East",
+            "Id": 1
+          },
+          {
+            "Name": "Anambra West",
+            "Id": 2
+          },
+          {
+            "Name": "Anaocha",
+            "Id": 3
+          },
+          {
+            "Name": "Awka North",
+            "Id": 4
+          },
+          {
+            "Name": "Awka South",
+            "Id": 5
+          },
+          {
+            "Name": "Ayamelum",
+            "Id": 6
+          },
+          {
+            "Name": "Dunukofia",
+            "Id": 7
+          },
+          {
+            "Name": "Ekwusigo",
+            "Id": 8
+          },
+          {
+            "Name": "Idemili North",
+            "Id": 9
+          },
+          {
+            "Name": "Idemili South",
+            "Id": 10
+          },
+          {
+            "Name": "Ihiala",
+            "Id": 11
+          },
+          {
+            "Name": "Njikoka",
+            "Id": 12
+          },
+          {
+            "Name": "Nnewi North",
+            "Id": 13
+          },
+          {
+            "Name": "Nnewi South",
+            "Id": 14
+          },
+          {
+            "Name": "Ogbaru",
+            "Id": 15
+          },
+          {
+            "Name": "Onitsha North",
+            "Id": 16
+          },
+          {
+            "Name": "Onitsha South",
+            "Id": 17
+          },
+          {
+            "Name": "Orumba North",
+            "Id": 18
+          },
+          {
+            "Name": "Orumba South",
+            "Id": 19
+          },
+          {
+            "Name": "Oyi",
+            "Id": 20
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Bauchi",
+        "Id": 5,
+        "Locals": [
+          {
+            "Name": "Bauchi",
+            "Id": 1
+          },
+          {
+            "Name": "Bogoro",
+            "Id": 2
+          },
+          {
+            "Name": "Damban",
+            "Id": 3
+          },
+          {
+            "Name": "Darazo",
+            "Id": 4
+          },
+          {
+            "Name": "Dass",
+            "Id": 5
+          },
+          {
+            "Name": "Gamawa",
+            "Id": 6
+          },
+          {
+            "Name": "Ganjuwa",
+            "Id": 7
+          },
+          {
+            "Name": "Giade",
+            "Id": 8
+          },
+          {
+            "Name": "Itas/Gadau",
+            "Id": 9
+          },
+          {
+            "Name": "Jama'are",
+            "Id": 10
+          },
+          {
+            "Name": "Katagum",
+            "Id": 11
+          },
+          {
+            "Name": "Kirfi",
+            "Id": 12
+          },
+          {
+            "Name": "Misau",
+            "Id": 13
+          },
+          {
+            "Name": "Ningi",
+            "Id": 14
+          },
+          {
+            "Name": "Shira",
+            "Id": 15
+          },
+          {
+            "Name": "Tafawa Balewa",
+            "Id": 16
+          },
+          {
+            "Name": "Toro",
+            "Id": 17
+          },
+          {
+            "Name": "Warji",
+            "Id": 18
+          },
+          {
+            "Name": "Zaki",
+            "Id": 19
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Bayelsa",
+        "Id": 6,
+        "Locals": [
+          {
+            "Name": "Ekeremor",
+            "Id": 1
+          },
+          {
+            "Name": "Kolokuma/Opokuma",
+            "Id": 2
+          },
+          {
+            "Name": "Nembe",
+            "Id": 3
+          },
+          {
+            "Name": "Ogbia",
+            "Id": 4
+          },
+          {
+            "Name": "Sagbama",
+            "Id": 5
+          },
+          {
+            "Name": "Southern Ijaw",
+            "Id": 6
+          },
+          {
+            "Name": "Yenagoa",
+            "Id": 7
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Benue",
+        "Id": 7,
+        "Locals": [
+          {
+            "Name": "Apa",
+            "Id": 1
+          },
+          {
+            "Name": "Ado",
+            "Id": 2
+          },
+          {
+            "Name": "Buruku",
+            "Id": 3
+          },
+          {
+            "Name": "Gboko",
+            "Id": 4
+          },
+          {
+            "Name": "Guma",
+            "Id": 5
+          },
+          {
+            "Name": "Gwer East",
+            "Id": 6
+          },
+          {
+            "Name": "Gwer West",
+            "Id": 7
+          },
+          {
+            "Name": "Katsina-Ala",
+            "Id": 8
+          },
+          {
+            "Name": "Konshisha",
+            "Id": 9
+          },
+          {
+            "Name": "Kwande",
+            "Id": 10
+          },
+          {
+            "Name": "Logo",
+            "Id": 11
+          },
+          {
+            "Name": "Makurdi",
+            "Id": 12
+          },
+          {
+            "Name": "Obi",
+            "Id": 13
+          },
+          {
+            "Name": "Ogbadibo",
+            "Id": 14
+          },
+          {
+            "Name": "Ohimini",
+            "Id": 15
+          },
+          {
+            "Name": "Oju",
+            "Id": 16
+          },
+          {
+            "Name": "Okpokwu",
+            "Id": 17
+          },
+          {
+            "Name": "Oturkpo",
+            "Id": 18
+          },
+          {
+            "Name": "Tarka",
+            "Id": 19
+          },
+          {
+            "Name": "Ukum",
+            "Id": 20
+          },
+          {
+            "Name": "Ushongo",
+            "Id": 21
+          },
+          {
+            "Name": "Vandeikya",
+            "Id": 22
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Borno",
+        "Id": 8,
+        "Locals": [
+          {
+            "Name": "Askira/Uba",
+            "Id": 1
+          },
+          {
+            "Name": "Bama",
+            "Id": 2
+          },
+          {
+            "Name": "Bayo",
+            "Id": 3
+          },
+          {
+            "Name": "Biu",
+            "Id": 4
+          },
+          {
+            "Name": "Chibok",
+            "Id": 5
+          },
+          {
+            "Name": "Damboa",
+            "Id": 6
+          },
+          {
+            "Name": "Dikwa",
+            "Id": 7
+          },
+          {
+            "Name": "Gubio",
+            "Id": 8
+          },
+          {
+            "Name": "Guzamala",
+            "Id": 9
+          },
+          {
+            "Name": "Gwoza",
+            "Id": 10
+          },
+          {
+            "Name": "Hawul",
+            "Id": 11
+          },
+          {
+            "Name": "Jere",
+            "Id": 12
+          },
+          {
+            "Name": "Kaga",
+            "Id": 13
+          },
+          {
+            "Name": "Kala/Balge",
+            "Id": 14
+          },
+          {
+            "Name": "Konduga",
+            "Id": 15
+          },
+          {
+            "Name": "Kukawa",
+            "Id": 16
+          },
+          {
+            "Name": "Kwaya Kusar",
+            "Id": 17
+          },
+          {
+            "Name": "Mafa",
+            "Id": 18
+          },
+          {
+            "Name": "Magumeri",
+            "Id": 19
+          },
+          {
+            "Name": "Maiduguri",
+            "Id": 20
+          },
+          {
+            "Name": "Marte",
+            "Id": 21
+          },
+          {
+            "Name": "Mobbar",
+            "Id": 22
+          },
+          {
+            "Name": "Monguno",
+            "Id": 23
+          },
+          {
+            "Name": "Ngala",
+            "Id": 24
+          },
+          {
+            "Name": "Nganzai",
+            "Id": 25
+          },
+          {
+            "Name": "Shani",
+            "Id": 26
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Cross River",
+        "Id": 9,
+        "Locals": [
+          {
+            "Name": "Akamkpa",
+            "Id": 1
+          },
+          {
+            "Name": "Akpabuyo",
+            "Id": 2
+          },
+          {
+            "Name": "Bakassi",
+            "Id": 3
+          },
+          {
+            "Name": "Bekwarra",
+            "Id": 4
+          },
+          {
+            "Name": "Biase",
+            "Id": 5
+          },
+          {
+            "Name": "Boki",
+            "Id": 6
+          },
+          {
+            "Name": "Calabar Municipal",
+            "Id": 7
+          },
+          {
+            "Name": "Calabar South",
+            "Id": 8
+          },
+          {
+            "Name": "Etung",
+            "Id": 9
+          },
+          {
+            "Name": "Ikom",
+            "Id": 10
+          },
+          {
+            "Name": "Obanliku",
+            "Id": 11
+          },
+          {
+            "Name": "Obubra",
+            "Id": 12
+          },
+          {
+            "Name": "Obudu",
+            "Id": 13
+          },
+          {
+            "Name": "Odukpani",
+            "Id": 14
+          },
+          {
+            "Name": "Ogoja",
+            "Id": 15
+          },
+          {
+            "Name": "Yakuur",
+            "Id": 16
+          },
+          {
+            "Name": "Yala",
+            "Id": 17
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Delta",
+        "Id": 10,
+        "Locals": [
+          {
+            "Name": "Aniocha South",
+            "Id": 1
+          },
+          {
+            "Name": "Bomadi",
+            "Id": 2
+          },
+          {
+            "Name": "Burutu",
+            "Id": 3
+          },
+          {
+            "Name": "Ethiope East",
+            "Id": 4
+          },
+          {
+            "Name": "Ethiope West",
+            "Id": 5
+          },
+          {
+            "Name": "Ika North East",
+            "Id": 6
+          },
+          {
+            "Name": "Ika South",
+            "Id": 7
+          },
+          {
+            "Name": "Isoko North",
+            "Id": 8
+          },
+          {
+            "Name": "Isoko South",
+            "Id": 9
+          },
+          {
+            "Name": "Ndokwa East",
+            "Id": 10
+          },
+          {
+            "Name": "Ndokwa West",
+            "Id": 11
+          },
+          {
+            "Name": "Okpe",
+            "Id": 12
+          },
+          {
+            "Name": "Oshimili North",
+            "Id": 13
+          },
+          {
+            "Name": "Oshimili South",
+            "Id": 14
+          },
+          {
+            "Name": "Patani",
+            "Id": 15
+          },
+          {
+            "Name": "Sapele",
+            "Id": 16
+          },
+          {
+            "Name": "Udu",
+            "Id": 17
+          },
+          {
+            "Name": "Ughelli North",
+            "Id": 18
+          },
+          {
+            "Name": "Ughelli South",
+            "Id": 19
+          },
+          {
+            "Name": "Ukwuani",
+            "Id": 20
+          },
+          {
+            "Name": "Uvwie",
+            "Id": 21
+          },
+          {
+            "Name": "Warri North",
+            "Id": 22
+          },
+          {
+            "Name": "Warri South",
+            "Id": 23
+          },
+          {
+            "Name": "Warri South West",
+            "Id": 24
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Ebonyi",
+        "Id": 11,
+        "Locals": [
+          {
+            "Name": "Afikpo North",
+            "Id": 1
+          },
+          {
+            "Name": "Afikpo South",
+            "Id": 2
+          },
+          {
+            "Name": "Ebonyi",
+            "Id": 3
+          },
+          {
+            "Name": "Ezza North",
+            "Id": 4
+          },
+          {
+            "Name": "Ezza South",
+            "Id": 5
+          },
+          {
+            "Name": "Ikwo",
+            "Id": 6
+          },
+          {
+            "Name": "Ishielu",
+            "Id": 7
+          },
+          {
+            "Name": "Ivo",
+            "Id": 8
+          },
+          {
+            "Name": "Izzi",
+            "Id": 9
+          },
+          {
+            "Name": "Ohaozara",
+            "Id": 10
+          },
+          {
+            "Name": "Ohaukwu",
+            "Id": 11
+          },
+          {
+            "Name": "Onicha",
+            "Id": 12
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Edo",
+        "Id": 12,
+        "Locals": [
+          {
+            "Name": "Egor",
+            "Id": 1
+          },
+          {
+            "Name": "Esan Central",
+            "Id": 2
+          },
+          {
+            "Name": "Esan North-East",
+            "Id": 3
+          },
+          {
+            "Name": "Esan South-East",
+            "Id": 4
+          },
+          {
+            "Name": "Esan West",
+            "Id": 5
+          },
+          {
+            "Name": "Etsako Central",
+            "Id": 6
+          },
+          {
+            "Name": "Etsako East",
+            "Id": 7
+          },
+          {
+            "Name": "Etsako West",
+            "Id": 8
+          },
+          {
+            "Name": "Igueben",
+            "Id": 9
+          },
+          {
+            "Name": "Ikpoba Okha",
+            "Id": 10
+          },
+          {
+            "Name": "Orhionmwon",
+            "Id": 11
+          },
+          {
+            "Name": "Oredo",
+            "Id": 12
+          },
+          {
+            "Name": "Ovia North-East",
+            "Id": 13
+          },
+          {
+            "Name": "Ovia South-West",
+            "Id": 14
+          },
+          {
+            "Name": "Owan East",
+            "Id": 15
+          },
+          {
+            "Name": "Owan West",
+            "Id": 16
+          },
+          {
+            "Name": "Uhunmwonde",
+            "Id": 17
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Ekiti",
+        "Id": 13,
+        "Locals": [
+          {
+            "Name": "Efon",
+            "Id": 1
+          },
+          {
+            "Name": "Ekiti East",
+            "Id": 2
+          },
+          {
+            "Name": "Ekiti South-West",
+            "Id": 3
+          },
+          {
+            "Name": "Ekiti West",
+            "Id": 4
+          },
+          {
+            "Name": "Emure",
+            "Id": 5
+          },
+          {
+            "Name": "Gbonyin",
+            "Id": 6
+          },
+          {
+            "Name": "Ido Osi",
+            "Id": 7
+          },
+          {
+            "Name": "Ijero",
+            "Id": 8
+          },
+          {
+            "Name": "Ikere",
+            "Id": 9
+          },
+          {
+            "Name": "Ikole",
+            "Id": 10
+          },
+          {
+            "Name": "Ilejemeje",
+            "Id": 11
+          },
+          {
+            "Name": "Irepodun/Ifelodun",
+            "Id": 12
+          },
+          {
+            "Name": "Ise/Orun",
+            "Id": 13
+          },
+          {
+            "Name": "Moba",
+            "Id": 14
+          },
+          {
+            "Name": "Oye",
+            "Id": 15
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Enugu",
+        "Id": 14,
+        "Locals": [
+          {
+            "Name": "Awgu",
+            "Id": 1
+          },
+          {
+            "Name": "Enugu East",
+            "Id": 2
+          },
+          {
+            "Name": "Enugu North",
+            "Id": 3
+          },
+          {
+            "Name": "Enugu South",
+            "Id": 4
+          },
+          {
+            "Name": "Ezeagu",
+            "Id": 5
+          },
+          {
+            "Name": "Igbo Etiti",
+            "Id": 6
+          },
+          {
+            "Name": "Igbo Eze North",
+            "Id": 7
+          },
+          {
+            "Name": "Igbo Eze South",
+            "Id": 8
+          },
+          {
+            "Name": "Isi Uzo",
+            "Id": 9
+          },
+          {
+            "Name": "Nkanu East",
+            "Id": 10
+          },
+          {
+            "Name": "Nkanu West",
+            "Id": 11
+          },
+          {
+            "Name": "Nsukka",
+            "Id": 12
+          },
+          {
+            "Name": "Oji River",
+            "Id": 13
+          },
+          {
+            "Name": "Udenu",
+            "Id": 14
+          },
+          {
+            "Name": "Udi",
+            "Id": 15
+          },
+          {
+            "Name": "Uzo Uwani",
+            "Id": 16
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "FCT",
+        "Id": 15,
+        "Locals": [
+          {
+            "Name": "Bwari",
+            "Id": 1
+          },
+          {
+            "Name": "Gwagwalada",
+            "Id": 2
+          },
+          {
+            "Name": "Kuje",
+            "Id": 3
+          },
+          {
+            "Name": "Kwali",
+            "Id": 4
+          },
+          {
+            "Name": "Municipal Area Council",
+            "Id": 5
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Gombe",
+        "Id": 16,
+        "Locals": [
+          {
+            "Name": "Balanga",
+            "Id": 1
+          },
+          {
+            "Name": "Billiri",
+            "Id": 2
+          },
+          {
+            "Name": "Dukku",
+            "Id": 3
+          },
+          {
+            "Name": "Funakaye",
+            "Id": 4
+          },
+          {
+            "Name": "Gombe",
+            "Id": 5
+          },
+          {
+            "Name": "Kaltungo",
+            "Id": 6
+          },
+          {
+            "Name": "Kwami",
+            "Id": 7
+          },
+          {
+            "Name": "Nafada",
+            "Id": 8
+          },
+          {
+            "Name": "Shongom",
+            "Id": 9
+          },
+          {
+            "Name": "Yamaltu/Deba",
+            "Id": 10
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Imo",
+        "Id": 17,
+        "Locals": [
+          {
+            "Name": "Ahiazu Mbaise",
+            "Id": 1
+          },
+          {
+            "Name": "Ehime Mbano",
+            "Id": 2
+          },
+          {
+            "Name": "Ezinihitte",
+            "Id": 3
+          },
+          {
+            "Name": "Ideato North",
+            "Id": 4
+          },
+          {
+            "Name": "Ideato South",
+            "Id": 5
+          },
+          {
+            "Name": "Ihitte/Uboma",
+            "Id": 6
+          },
+          {
+            "Name": "Ikeduru",
+            "Id": 7
+          },
+          {
+            "Name": "Isiala Mbano",
+            "Id": 8
+          },
+          {
+            "Name": "Isu",
+            "Id": 9
+          },
+          {
+            "Name": "Mbaitoli",
+            "Id": 10
+          },
+          {
+            "Name": "Ngor Okpala",
+            "Id": 11
+          },
+          {
+            "Name": "Njaba",
+            "Id": 12
+          },
+          {
+            "Name": "Nkwerre",
+            "Id": 13
+          },
+          {
+            "Name": "Nwangele",
+            "Id": 14
+          },
+          {
+            "Name": "Obowo",
+            "Id": 15
+          },
+          {
+            "Name": "Oguta",
+            "Id": 16
+          },
+          {
+            "Name": "Ohaji/Egbema",
+            "Id": 17
+          },
+          {
+            "Name": "Okigwe",
+            "Id": 18
+          },
+          {
+            "Name": "Orlu",
+            "Id": 19
+          },
+          {
+            "Name": "Orsu",
+            "Id": 20
+          },
+          {
+            "Name": "Oru East",
+            "Id": 21
+          },
+          {
+            "Name": "Oru West",
+            "Id": 22
+          },
+          {
+            "Name": "Owerri Municipal",
+            "Id": 23
+          },
+          {
+            "Name": "Owerri North",
+            "Id": 24
+          },
+          {
+            "Name": "Owerri West",
+            "Id": 25
+          },
+          {
+            "Name": "Unuimo",
+            "Id": 26
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Jigawa",
+        "Id": 18,
+        "Locals": [
+          {
+            "Name": "Babura",
+            "Id": 1
+          },
+          {
+            "Name": "Biriniwa",
+            "Id": 2
+          },
+          {
+            "Name": "Birnin Kudu",
+            "Id": 3
+          },
+          {
+            "Name": "Buji",
+            "Id": 4
+          },
+          {
+            "Name": "Dutse",
+            "Id": 5
+          },
+          {
+            "Name": "Gagarawa",
+            "Id": 6
+          },
+          {
+            "Name": "Garki",
+            "Id": 7
+          },
+          {
+            "Name": "Gumel",
+            "Id": 8
+          },
+          {
+            "Name": "Guri",
+            "Id": 9
+          },
+          {
+            "Name": "Gwaram",
+            "Id": 10
+          },
+          {
+            "Name": "Gwiwa",
+            "Id": 11
+          },
+          {
+            "Name": "Hadejia",
+            "Id": 12
+          },
+          {
+            "Name": "Jahun",
+            "Id": 13
+          },
+          {
+            "Name": "Kafin Hausa",
+            "Id": 14
+          },
+          {
+            "Name": "Kazaure",
+            "Id": 15
+          },
+          {
+            "Name": "Kiri Kasama",
+            "Id": 16
+          },
+          {
+            "Name": "Kiyawa",
+            "Id": 17
+          },
+          {
+            "Name": "Kaugama",
+            "Id": 18
+          },
+          {
+            "Name": "Maigatari",
+            "Id": 19
+          },
+          {
+            "Name": "Malam Madori",
+            "Id": 20
+          },
+          {
+            "Name": "Miga",
+            "Id": 21
+          },
+          {
+            "Name": "Ringim",
+            "Id": 22
+          },
+          {
+            "Name": "Roni",
+            "Id": 23
+          },
+          {
+            "Name": "Sule Tankarkar",
+            "Id": 24
+          },
+          {
+            "Name": "Taura",
+            "Id": 25
+          },
+          {
+            "Name": "Yankwashi",
+            "Id": 26
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Kaduna",
+        "Id": 19,
+        "Locals": [
+          {
+            "Name": "Chikun",
+            "Id": 1
+          },
+          {
+            "Name": "Giwa",
+            "Id": 2
+          },
+          {
+            "Name": "Igabi",
+            "Id": 3
+          },
+          {
+            "Name": "Ikara",
+            "Id": 4
+          },
+          {
+            "Name": "Jaba",
+            "Id": 5
+          },
+          {
+            "Name": "Jema'a",
+            "Id": 6
+          },
+          {
+            "Name": "Kachia",
+            "Id": 7
+          },
+          {
+            "Name": "Kaduna North",
+            "Id": 8
+          },
+          {
+            "Name": "Kaduna South",
+            "Id": 9
+          },
+          {
+            "Name": "Kagarko",
+            "Id": 10
+          },
+          {
+            "Name": "Kajuru",
+            "Id": 11
+          },
+          {
+            "Name": "Kaura",
+            "Id": 12
+          },
+          {
+            "Name": "Kauru",
+            "Id": 13
+          },
+          {
+            "Name": "Kubau",
+            "Id": 14
+          },
+          {
+            "Name": "Kudan",
+            "Id": 15
+          },
+          {
+            "Name": "Lere",
+            "Id": 16
+          },
+          {
+            "Name": "Makarfi",
+            "Id": 17
+          },
+          {
+            "Name": "Sabon Gari",
+            "Id": 18
+          },
+          {
+            "Name": "Sanga",
+            "Id": 19
+          },
+          {
+            "Name": "Soba",
+            "Id": 20
+          },
+          {
+            "Name": "Zangon Kataf",
+            "Id": 21
+          },
+          {
+            "Name": "Zaria",
+            "Id": 22
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Kano",
+        "Id": 20,
+        "Locals": [
+          {
+            "Name": "Albasu",
+            "Id": 1
+          },
+          {
+            "Name": "Bagwai",
+            "Id": 2
+          },
+          {
+            "Name": "Bebeji",
+            "Id": 3
+          },
+          {
+            "Name": "Bichi",
+            "Id": 4
+          },
+          {
+            "Name": "Bunkure",
+            "Id": 5
+          },
+          {
+            "Name": "Dala",
+            "Id": 6
+          },
+          {
+            "Name": "Dambatta",
+            "Id": 7
+          },
+          {
+            "Name": "Dawakin Kudu",
+            "Id": 8
+          },
+          {
+            "Name": "Dawakin Tofa",
+            "Id": 9
+          },
+          {
+            "Name": "Doguwa",
+            "Id": 10
+          },
+          {
+            "Name": "Fagge",
+            "Id": 11
+          },
+          {
+            "Name": "Gabasawa",
+            "Id": 12
+          },
+          {
+            "Name": "Garko",
+            "Id": 13
+          },
+          {
+            "Name": "Garun Mallam",
+            "Id": 14
+          },
+          {
+            "Name": "Gaya",
+            "Id": 15
+          },
+          {
+            "Name": "Gezawa",
+            "Id": 16
+          },
+          {
+            "Name": "Gwale",
+            "Id": 17
+          },
+          {
+            "Name": "Gwarzo",
+            "Id": 18
+          },
+          {
+            "Name": "Kabo",
+            "Id": 19
+          },
+          {
+            "Name": "Kano Municipal",
+            "Id": 20
+          },
+          {
+            "Name": "Karaye",
+            "Id": 21
+          },
+          {
+            "Name": "Kibiya",
+            "Id": 22
+          },
+          {
+            "Name": "Kiru",
+            "Id": 23
+          },
+          {
+            "Name": "Kumbotso",
+            "Id": 24
+          },
+          {
+            "Name": "Kunchi",
+            "Id": 25
+          },
+          {
+            "Name": "Kura",
+            "Id": 26
+          },
+          {
+            "Name": "Madobi",
+            "Id": 27
+          },
+          {
+            "Name": "Makoda",
+            "Id": 28
+          },
+          {
+            "Name": "Minjibir",
+            "Id": 29
+          },
+          {
+            "Name": "Nasarawa",
+            "Id": 30
+          },
+          {
+            "Name": "Rano",
+            "Id": 31
+          },
+          {
+            "Name": "Rimin Gado",
+            "Id": 32
+          },
+          {
+            "Name": "Rogo",
+            "Id": 33
+          },
+          {
+            "Name": "Shanono",
+            "Id": 34
+          },
+          {
+            "Name": "Sumaila",
+            "Id": 35
+          },
+          {
+            "Name": "Takai",
+            "Id": 36
+          },
+          {
+            "Name": "Tarauni",
+            "Id": 37
+          },
+          {
+            "Name": "Tofa",
+            "Id": 38
+          },
+          {
+            "Name": "Tsanyawa",
+            "Id": 39
+          },
+          {
+            "Name": "Tudun Wada",
+            "Id": 40
+          },
+          {
+            "Name": "Ungogo",
+            "Id": 41
+          },
+          {
+            "Name": "Warawa",
+            "Id": 42
+          },
+          {
+            "Name": "Wudil",
+            "Id": 43
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Katsina",
+        "Id": 21,
+        "Locals": [
+          {
+            "Name": "Batagarawa",
+            "Id": 1
+          },
+          {
+            "Name": "Batsari",
+            "Id": 2
+          },
+          {
+            "Name": "Baure",
+            "Id": 3
+          },
+          {
+            "Name": "Bindawa",
+            "Id": 4
+          },
+          {
+            "Name": "Charanchi",
+            "Id": 5
+          },
+          {
+            "Name": "Dandume",
+            "Id": 6
+          },
+          {
+            "Name": "Danja",
+            "Id": 7
+          },
+          {
+            "Name": "Dan Musa",
+            "Id": 8
+          },
+          {
+            "Name": "Daura",
+            "Id": 9
+          },
+          {
+            "Name": "Dutsi",
+            "Id": 10
+          },
+          {
+            "Name": "Dutsin Ma",
+            "Id": 11
+          },
+          {
+            "Name": "Faskari",
+            "Id": 12
+          },
+          {
+            "Name": "Funtua",
+            "Id": 13
+          },
+          {
+            "Name": "Ingawa",
+            "Id": 14
+          },
+          {
+            "Name": "Jibia",
+            "Id": 15
+          },
+          {
+            "Name": "Kafur",
+            "Id": 16
+          },
+          {
+            "Name": "Kaita",
+            "Id": 17
+          },
+          {
+            "Name": "Kankara",
+            "Id": 18
+          },
+          {
+            "Name": "Kankia",
+            "Id": 19
+          },
+          {
+            "Name": "Katsina",
+            "Id": 20
+          },
+          {
+            "Name": "Kurfi",
+            "Id": 21
+          },
+          {
+            "Name": "Kusada",
+            "Id": 22
+          },
+          {
+            "Name": "Mai'Adua",
+            "Id": 23
+          },
+          {
+            "Name": "Malumfashi",
+            "Id": 24
+          },
+          {
+            "Name": "Mani",
+            "Id": 25
+          },
+          {
+            "Name": "Mashi",
+            "Id": 26
+          },
+          {
+            "Name": "Matazu",
+            "Id": 27
+          },
+          {
+            "Name": "Musawa",
+            "Id": 28
+          },
+          {
+            "Name": "Rimi",
+            "Id": 29
+          },
+          {
+            "Name": "Sabuwa",
+            "Id": 30
+          },
+          {
+            "Name": "Safana",
+            "Id": 31
+          },
+          {
+            "Name": "Sandamu",
+            "Id": 32
+          },
+          {
+            "Name": "Zango",
+            "Id": 33
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Kebbi",
+        "Id": 22,
+        "Locals": [
+          {
+            "Name": "Arewa Dandi",
+            "Id": 1
+          },
+          {
+            "Name": "Argungu",
+            "Id": 2
+          },
+          {
+            "Name": "Augie",
+            "Id": 3
+          },
+          {
+            "Name": "Bagudo",
+            "Id": 4
+          },
+          {
+            "Name": "Birnin Kebbi",
+            "Id": 5
+          },
+          {
+            "Name": "Bunza",
+            "Id": 6
+          },
+          {
+            "Name": "Dandi",
+            "Id": 7
+          },
+          {
+            "Name": "Fakai",
+            "Id": 8
+          },
+          {
+            "Name": "Gwandu",
+            "Id": 9
+          },
+          {
+            "Name": "Jega",
+            "Id": 10
+          },
+          {
+            "Name": "Kalgo",
+            "Id": 11
+          },
+          {
+            "Name": "Koko/Besse",
+            "Id": 12
+          },
+          {
+            "Name": "Maiyama",
+            "Id": 13
+          },
+          {
+            "Name": "Ngaski",
+            "Id": 14
+          },
+          {
+            "Name": "Sakaba",
+            "Id": 15
+          },
+          {
+            "Name": "Shanga",
+            "Id": 16
+          },
+          {
+            "Name": "Suru",
+            "Id": 17
+          },
+          {
+            "Name": "Wasagu/Danko",
+            "Id": 18
+          },
+          {
+            "Name": "Yauri",
+            "Id": 19
+          },
+          {
+            "Name": "Zuru",
+            "Id": 20
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Kogi",
+        "Id": 23,
+        "Locals": [
+          {
+            "Name": "Ajaokuta",
+            "Id": 1
+          },
+          {
+            "Name": "Ankpa",
+            "Id": 2
+          },
+          {
+            "Name": "Bassa",
+            "Id": 3
+          },
+          {
+            "Name": "Dekina",
+            "Id": 4
+          },
+          {
+            "Name": "Ibaji",
+            "Id": 5
+          },
+          {
+            "Name": "Idah",
+            "Id": 6
+          },
+          {
+            "Name": "Igalamela Odolu",
+            "Id": 7
+          },
+          {
+            "Name": "Ijumu",
+            "Id": 8
+          },
+          {
+            "Name": "Kabba/Bunu",
+            "Id": 9
+          },
+          {
+            "Name": "Kogi",
+            "Id": 10
+          },
+          {
+            "Name": "Lokoja",
+            "Id": 11
+          },
+          {
+            "Name": "Mopa Muro",
+            "Id": 12
+          },
+          {
+            "Name": "Ofu",
+            "Id": 13
+          },
+          {
+            "Name": "Ogori/Magongo",
+            "Id": 14
+          },
+          {
+            "Name": "Okehi",
+            "Id": 15
+          },
+          {
+            "Name": "Okene",
+            "Id": 16
+          },
+          {
+            "Name": "Olamaboro",
+            "Id": 17
+          },
+          {
+            "Name": "Omala",
+            "Id": 18
+          },
+          {
+            "Name": "Yagba East",
+            "Id": 19
+          },
+          {
+            "Name": "Yagba West",
+            "Id": 20
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Kwara",
+        "Id": 24,
+        "Locals": [
+          {
+            "Name": "Baruten",
+            "Id": 1
+          },
+          {
+            "Name": "Edu",
+            "Id": 2
+          },
+          {
+            "Name": "Ekiti",
+            "Id": 3
+          },
+          {
+            "Name": "Ifelodun",
+            "Id": 4
+          },
+          {
+            "Name": "Ilorin East",
+            "Id": 5
+          },
+          {
+            "Name": "Ilorin South",
+            "Id": 6
+          },
+          {
+            "Name": "Ilorin West",
+            "Id": 7
+          },
+          {
+            "Name": "Irepodun",
+            "Id": 8
+          },
+          {
+            "Name": "Isin",
+            "Id": 9
+          },
+          {
+            "Name": "Kaiama",
+            "Id": 10
+          },
+          {
+            "Name": "Moro",
+            "Id": 11
+          },
+          {
+            "Name": "Offa",
+            "Id": 12
+          },
+          {
+            "Name": "Oke Ero",
+            "Id": 13
+          },
+          {
+            "Name": "Oyun",
+            "Id": 14
+          },
+          {
+            "Name": "Pategi",
+            "Id": 15
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Lagos",
+        "Id": 25,
+        "Locals": [
+          {
+            "Name": "Ajeromi-Ifelodun",
+            "Id": 1
+          },
+          {
+            "Name": "Alimosho",
+            "Id": 2
+          },
+          {
+            "Name": "Amuwo-Odofin",
+            "Id": 3
+          },
+          {
+            "Name": "Apapa",
+            "Id": 4
+          },
+          {
+            "Name": "Badagry",
+            "Id": 5
+          },
+          {
+            "Name": "Epe",
+            "Id": 6
+          },
+          {
+            "Name": "Eti Osa",
+            "Id": 7
+          },
+          {
+            "Name": "Ibeju-Lekki",
+            "Id": 8
+          },
+          {
+            "Name": "Ifako-Ijaiye",
+            "Id": 9
+          },
+          {
+            "Name": "Ikeja",
+            "Id": 10
+          },
+          {
+            "Name": "Ikorodu",
+            "Id": 11
+          },
+          {
+            "Name": "Kosofe",
+            "Id": 12
+          },
+          {
+            "Name": "Lagos Island",
+            "Id": 13
+          },
+          {
+            "Name": "Lagos Mainland",
+            "Id": 14
+          },
+          {
+            "Name": "Mushin",
+            "Id": 15
+          },
+          {
+            "Name": "Ojo",
+            "Id": 16
+          },
+          {
+            "Name": "Oshodi-Isolo",
+            "Id": 17
+          },
+          {
+            "Name": "Shomolu",
+            "Id": 18
+          },
+          {
+            "Name": "Surulere",
+            "Id": 19
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Nasarawa",
+        "Id": 26,
+        "Locals": [
+          {
+            "Name": "Awe",
+            "Id": 1
+          },
+          {
+            "Name": "Doma",
+            "Id": 2
+          },
+          {
+            "Name": "Karu",
+            "Id": 3
+          },
+          {
+            "Name": "Keana",
+            "Id": 4
+          },
+          {
+            "Name": "Keffi",
+            "Id": 5
+          },
+          {
+            "Name": "Kokona",
+            "Id": 6
+          },
+          {
+            "Name": "Lafia",
+            "Id": 7
+          },
+          {
+            "Name": "Nasarawa",
+            "Id": 8
+          },
+          {
+            "Name": "Nasarawa Egon",
+            "Id": 9
+          },
+          {
+            "Name": "Obi",
+            "Id": 10
+          },
+          {
+            "Name": "Toto",
+            "Id": 11
+          },
+          {
+            "Name": "Wamba",
+            "Id": 12
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Niger",
+        "Id": 27,
+        "Locals": [
+          {
+            "Name": "Agwara",
+            "Id": 1
+          },
+          {
+            "Name": "Bida",
+            "Id": 2
+          },
+          {
+            "Name": "Borgu",
+            "Id": 3
+          },
+          {
+            "Name": "Bosso",
+            "Id": 4
+          },
+          {
+            "Name": "Chanchaga",
+            "Id": 5
+          },
+          {
+            "Name": "Edati",
+            "Id": 6
+          },
+          {
+            "Name": "Gbako",
+            "Id": 7
+          },
+          {
+            "Name": "Gurara",
+            "Id": 8
+          },
+          {
+            "Name": "Katcha",
+            "Id": 9
+          },
+          {
+            "Name": "Kontagora",
+            "Id": 10
+          },
+          {
+            "Name": "Lapai",
+            "Id": 11
+          },
+          {
+            "Name": "Lavun",
+            "Id": 12
+          },
+          {
+            "Name": "Magama",
+            "Id": 13
+          },
+          {
+            "Name": "Mariga",
+            "Id": 14
+          },
+          {
+            "Name": "Mashegu",
+            "Id": 15
+          },
+          {
+            "Name": "Mokwa",
+            "Id": 16
+          },
+          {
+            "Name": "Moya",
+            "Id": 17
+          },
+          {
+            "Name": "Paikoro",
+            "Id": 18
+          },
+          {
+            "Name": "Rafi",
+            "Id": 19
+          },
+          {
+            "Name": "Rijau",
+            "Id": 20
+          },
+          {
+            "Name": "Shiroro",
+            "Id": 21
+          },
+          {
+            "Name": "Suleja",
+            "Id": 22
+          },
+          {
+            "Name": "Tafa",
+            "Id": 23
+          },
+          {
+            "Name": "Wushishi",
+            "Id": 24
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Ogun",
+        "Id": 28,
+        "Locals": [
+          {
+            "Name": "Abeokuta South",
+            "Id": 1
+          },
+          {
+            "Name": "Ado-Odo/Ota",
+            "Id": 2
+          },
+          {
+            "Name": "Egbado North",
+            "Id": 3
+          },
+          {
+            "Name": "Egbado South",
+            "Id": 4
+          },
+          {
+            "Name": "Ewekoro",
+            "Id": 5
+          },
+          {
+            "Name": "Ifo",
+            "Id": 6
+          },
+          {
+            "Name": "Ijebu East",
+            "Id": 7
+          },
+          {
+            "Name": "Ijebu North",
+            "Id": 8
+          },
+          {
+            "Name": "Ijebu North East",
+            "Id": 9
+          },
+          {
+            "Name": "Ijebu Ode",
+            "Id": 10
+          },
+          {
+            "Name": "Ikenne",
+            "Id": 11
+          },
+          {
+            "Name": "Imeko Afon",
+            "Id": 12
+          },
+          {
+            "Name": "Ipokia",
+            "Id": 13
+          },
+          {
+            "Name": "Obafemi Owode",
+            "Id": 14
+          },
+          {
+            "Name": "Odeda",
+            "Id": 15
+          },
+          {
+            "Name": "Odogbolu",
+            "Id": 16
+          },
+          {
+            "Name": "Ogun Waterside",
+            "Id": 17
+          },
+          {
+            "Name": "Remo North",
+            "Id": 18
+          },
+          {
+            "Name": "Shagamu",
+            "Id": 19
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Ondo",
+        "Id": 29,
+        "Locals": [
+          {
+            "Name": "Akoko North-West",
+            "Id": 1
+          },
+          {
+            "Name": "Akoko South-West",
+            "Id": 2
+          },
+          {
+            "Name": "Akoko South-East",
+            "Id": 3
+          },
+          {
+            "Name": "Akure North",
+            "Id": 4
+          },
+          {
+            "Name": "Akure South",
+            "Id": 5
+          },
+          {
+            "Name": "Ese Odo",
+            "Id": 6
+          },
+          {
+            "Name": "Idanre",
+            "Id": 7
+          },
+          {
+            "Name": "Ifedore",
+            "Id": 8
+          },
+          {
+            "Name": "Ilaje",
+            "Id": 9
+          },
+          {
+            "Name": "Ile Oluji/Okeigbo",
+            "Id": 10
+          },
+          {
+            "Name": "Irele",
+            "Id": 11
+          },
+          {
+            "Name": "Odigbo",
+            "Id": 12
+          },
+          {
+            "Name": "Okitipupa",
+            "Id": 13
+          },
+          {
+            "Name": "Ondo East",
+            "Id": 14
+          },
+          {
+            "Name": "Ondo West",
+            "Id": 15
+          },
+          {
+            "Name": "Ose",
+            "Id": 16
+          },
+          {
+            "Name": "Owo",
+            "Id": 17
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Osun",
+        "Id": 30,
+        "Locals": [
+          {
+            "Name": "Atakunmosa West",
+            "Id": 1
+          },
+          {
+            "Name": "Aiyedaade",
+            "Id": 2
+          },
+          {
+            "Name": "Aiyedire",
+            "Id": 3
+          },
+          {
+            "Name": "Boluwaduro",
+            "Id": 4
+          },
+          {
+            "Name": "Boripe",
+            "Id": 5
+          },
+          {
+            "Name": "Ede North",
+            "Id": 6
+          },
+          {
+            "Name": "Ede South",
+            "Id": 7
+          },
+          {
+            "Name": "Ife Central",
+            "Id": 8
+          },
+          {
+            "Name": "Ife East",
+            "Id": 9
+          },
+          {
+            "Name": "Ife North",
+            "Id": 10
+          },
+          {
+            "Name": "Ife South",
+            "Id": 11
+          },
+          {
+            "Name": "Egbedore",
+            "Id": 12
+          },
+          {
+            "Name": "Ejigbo",
+            "Id": 13
+          },
+          {
+            "Name": "Ifedayo",
+            "Id": 14
+          },
+          {
+            "Name": "Ifelodun",
+            "Id": 15
+          },
+          {
+            "Name": "Ila",
+            "Id": 16
+          },
+          {
+            "Name": "Ilesa East",
+            "Id": 17
+          },
+          {
+            "Name": "Ilesa West",
+            "Id": 18
+          },
+          {
+            "Name": "Irepodun",
+            "Id": 19
+          },
+          {
+            "Name": "Irewole",
+            "Id": 20
+          },
+          {
+            "Name": "Isokan",
+            "Id": 21
+          },
+          {
+            "Name": "Iwo",
+            "Id": 22
+          },
+          {
+            "Name": "Obokun",
+            "Id": 23
+          },
+          {
+            "Name": "Odo Otin",
+            "Id": 24
+          },
+          {
+            "Name": "Ola Oluwa",
+            "Id": 25
+          },
+          {
+            "Name": "Olorunda",
+            "Id": 26
+          },
+          {
+            "Name": "Oriade",
+            "Id": 27
+          },
+          {
+            "Name": "Orolu",
+            "Id": 28
+          },
+          {
+            "Name": "Osogbo",
+            "Id": 29
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Oyo",
+        "Id": 31,
+        "Locals": [
+          {
+            "Name": "Akinyele",
+            "Id": 1
+          },
+          {
+            "Name": "Atiba",
+            "Id": 2
+          },
+          {
+            "Name": "Atisbo",
+            "Id": 3
+          },
+          {
+            "Name": "Egbeda",
+            "Id": 4
+          },
+          {
+            "Name": "Ibadan North",
+            "Id": 5
+          },
+          {
+            "Name": "Ibadan North-East",
+            "Id": 6
+          },
+          {
+            "Name": "Ibadan North-West",
+            "Id": 7
+          },
+          {
+            "Name": "Ibadan South-East",
+            "Id": 8
+          },
+          {
+            "Name": "Ibadan South-West",
+            "Id": 9
+          },
+          {
+            "Name": "Ibarapa Central",
+            "Id": 10
+          },
+          {
+            "Name": "Ibarapa East",
+            "Id": 11
+          },
+          {
+            "Name": "Ibarapa North",
+            "Id": 12
+          },
+          {
+            "Name": "Ido",
+            "Id": 13
+          },
+          {
+            "Name": "Irepo",
+            "Id": 14
+          },
+          {
+            "Name": "Iseyin",
+            "Id": 15
+          },
+          {
+            "Name": "Itesiwaju",
+            "Id": 16
+          },
+          {
+            "Name": "Iwajowa",
+            "Id": 17
+          },
+          {
+            "Name": "Kajola",
+            "Id": 18
+          },
+          {
+            "Name": "Lagelu",
+            "Id": 19
+          },
+          {
+            "Name": "Ogbomosho North",
+            "Id": 20
+          },
+          {
+            "Name": "Ogbomosho South",
+            "Id": 21
+          },
+          {
+            "Name": "Ogo Oluwa",
+            "Id": 22
+          },
+          {
+            "Name": "Olorunsogo",
+            "Id": 23
+          },
+          {
+            "Name": "Oluyole",
+            "Id": 24
+          },
+          {
+            "Name": "Ona Ara",
+            "Id": 25
+          },
+          {
+            "Name": "Orelope",
+            "Id": 26
+          },
+          {
+            "Name": "Ori Ire",
+            "Id": 27
+          },
+          {
+            "Name": "Oyo",
+            "Id": 28
+          },
+          {
+            "Name": "Oyo East",
+            "Id": 29
+          },
+          {
+            "Name": "Saki East",
+            "Id": 30
+          },
+          {
+            "Name": "Saki West",
+            "Id": 31
+          },
+          {
+            "Name": "Surulere",
+            "Id": 32
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Plateau",
+        "Id": 32,
+        "Locals": [
+          {
+            "Name": "Barkin Ladi",
+            "Id": 1
+          },
+          {
+            "Name": "Bassa",
+            "Id": 2
+          },
+          {
+            "Name": "Jos East",
+            "Id": 3
+          },
+          {
+            "Name": "Jos North",
+            "Id": 4
+          },
+          {
+            "Name": "Jos South",
+            "Id": 5
+          },
+          {
+            "Name": "Kanam",
+            "Id": 6
+          },
+          {
+            "Name": "Kanke",
+            "Id": 7
+          },
+          {
+            "Name": "Langtang South",
+            "Id": 8
+          },
+          {
+            "Name": "Langtang North",
+            "Id": 9
+          },
+          {
+            "Name": "Mangu",
+            "Id": 10
+          },
+          {
+            "Name": "Mikang",
+            "Id": 11
+          },
+          {
+            "Name": "Pankshin",
+            "Id": 12
+          },
+          {
+            "Name": "Qua'an Pan",
+            "Id": 13
+          },
+          {
+            "Name": "Riyom",
+            "Id": 14
+          },
+          {
+            "Name": "Shendam",
+            "Id": 15
+          },
+          {
+            "Name": "Wase",
+            "Id": 16
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Rivers",
+        "Id": 33,
+        "Locals": [
+          {
+            "Name": "Ahoada East",
+            "Id": 1
+          },
+          {
+            "Name": "Ahoada West",
+            "Id": 2
+          },
+          {
+            "Name": "Akuku-Toru",
+            "Id": 3
+          },
+          {
+            "Name": "Andoni",
+            "Id": 4
+          },
+          {
+            "Name": "Asari-Toru",
+            "Id": 5
+          },
+          {
+            "Name": "Bonny",
+            "Id": 6
+          },
+          {
+            "Name": "Degema",
+            "Id": 7
+          },
+          {
+            "Name": "Eleme",
+            "Id": 8
+          },
+          {
+            "Name": "Emuoha",
+            "Id": 9
+          },
+          {
+            "Name": "Etche",
+            "Id": 10
+          },
+          {
+            "Name": "Gokana",
+            "Id": 11
+          },
+          {
+            "Name": "Ikwerre",
+            "Id": 12
+          },
+          {
+            "Name": "Khana",
+            "Id": 13
+          },
+          {
+            "Name": "Obio/Akpor",
+            "Id": 14
+          },
+          {
+            "Name": "Ogba/Egbema/Ndoni",
+            "Id": 15
+          },
+          {
+            "Name": "Ogu/Bolo",
+            "Id": 16
+          },
+          {
+            "Name": "Okrika",
+            "Id": 17
+          },
+          {
+            "Name": "Omuma",
+            "Id": 18
+          },
+          {
+            "Name": "Opobo/Nkoro",
+            "Id": 19
+          },
+          {
+            "Name": "Oyigbo",
+            "Id": 20
+          },
+          {
+            "Name": "Port Harcourt",
+            "Id": 21
+          },
+          {
+            "Name": "Tai",
+            "Id": 22
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Sokoto",
+        "Id": 34,
+        "Locals": [
+          {
+            "Name": "Bodinga",
+            "Id": 1
+          },
+          {
+            "Name": "Dange Shuni",
+            "Id": 2
+          },
+          {
+            "Name": "Gada",
+            "Id": 3
+          },
+          {
+            "Name": "Goronyo",
+            "Id": 4
+          },
+          {
+            "Name": "Gudu",
+            "Id": 5
+          },
+          {
+            "Name": "Gwadabawa",
+            "Id": 6
+          },
+          {
+            "Name": "Illela",
+            "Id": 7
+          },
+          {
+            "Name": "Isa",
+            "Id": 8
+          },
+          {
+            "Name": "Kebbe",
+            "Id": 9
+          },
+          {
+            "Name": "Kware",
+            "Id": 10
+          },
+          {
+            "Name": "Rabah",
+            "Id": 11
+          },
+          {
+            "Name": "Sabon Birni",
+            "Id": 12
+          },
+          {
+            "Name": "Shagari",
+            "Id": 13
+          },
+          {
+            "Name": "Silame",
+            "Id": 14
+          },
+          {
+            "Name": "Sokoto North",
+            "Id": 15
+          },
+          {
+            "Name": "Sokoto South",
+            "Id": 16
+          },
+          {
+            "Name": "Tambuwal",
+            "Id": 17
+          },
+          {
+            "Name": "Tangaza",
+            "Id": 18
+          },
+          {
+            "Name": "Tureta",
+            "Id": 19
+          },
+          {
+            "Name": "Wamako",
+            "Id": 20
+          },
+          {
+            "Name": "Wurno",
+            "Id": 21
+          },
+          {
+            "Name": "Yabo",
+            "Id": 22
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Taraba",
+        "Id": 35,
+        "Locals": [
+          {
+            "Name": "Bali",
+            "Id": 1
+          },
+          {
+            "Name": "Donga",
+            "Id": 2
+          },
+          {
+            "Name": "Gashaka",
+            "Id": 3
+          },
+          {
+            "Name": "Gassol",
+            "Id": 4
+          },
+          {
+            "Name": "Ibi",
+            "Id": 5
+          },
+          {
+            "Name": "Jalingo",
+            "Id": 6
+          },
+          {
+            "Name": "Karim Lamido",
+            "Id": 7
+          },
+          {
+            "Name": "Kumi",
+            "Id": 8
+          },
+          {
+            "Name": "Lau",
+            "Id": 9
+          },
+          {
+            "Name": "Sardauna",
+            "Id": 10
+          },
+          {
+            "Name": "Takum",
+            "Id": 11
+          },
+          {
+            "Name": "Ussa",
+            "Id": 12
+          },
+          {
+            "Name": "Wukari",
+            "Id": 13
+          },
+          {
+            "Name": "Yorro",
+            "Id": 14
+          },
+          {
+            "Name": "Zing",
+            "Id": 15
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Yobe",
+        "Id": 36,
+        "Locals": [
+          {
+            "Name": "Bursari",
+            "Id": 1
+          },
+          {
+            "Name": "Damaturu",
+            "Id": 2
+          },
+          {
+            "Name": "Fika",
+            "Id": 3
+          },
+          {
+            "Name": "Fune",
+            "Id": 4
+          },
+          {
+            "Name": "Geidam",
+            "Id": 5
+          },
+          {
+            "Name": "Gujba",
+            "Id": 6
+          },
+          {
+            "Name": "Gulani",
+            "Id": 7
+          },
+          {
+            "Name": "Jakusko",
+            "Id": 8
+          },
+          {
+            "Name": "Karasuwa",
+            "Id": 9
+          },
+          {
+            "Name": "Machina",
+            "Id": 10
+          },
+          {
+            "Name": "Nangere",
+            "Id": 11
+          },
+          {
+            "Name": "Nguru",
+            "Id": 12
+          },
+          {
+            "Name": "Potiskum",
+            "Id": 13
+          },
+          {
+            "Name": "Tarmuwa",
+            "Id": 14
+          },
+          {
+            "Name": "Yunusari",
+            "Id": 15
+          },
+          {
+            "Name": "Yusufari",
+            "Id": 16
+          }
+        ]
+      }
+    },
+    {
+      "StateList": {
+        "Name": "Zamfara",
+        "Id": 37,
+        "Locals": [
+          {
+            "Name": "Bakura",
+            "Id": 1
+          },
+          {
+            "Name": "Birnin Magaji/Kiyaw",
+            "Id": 2
+          },
+          {
+            "Name": "Bukkuyum",
+            "Id": 3
+          },
+          {
+            "Name": "Bungudu",
+            "Id": 4
+          },
+          {
+            "Name": "Gummi",
+            "Id": 5
+          },
+          {
+            "Name": "Gusau",
+            "Id": 6
+          },
+          {
+            "Name": "Kaura Namoda",
+            "Id": 7
+          },
+          {
+            "Name": "Maradun",
+            "Id": 8
+          },
+          {
+            "Name": "Maru",
+            "Id": 9
+          },
+          {
+            "Name": "Shinkafi",
+            "Id": 10
+          },
+          {
+            "Name": "Talata Mafara",
+            "Id": 11
+          },
+          {
+            "Name": "Chafe",
+            "Id": 12
+          },
+          {
+            "Name": "Zurmi",
+            "Id": 13
+          }
+        ]
+      }
+    }
+  }
+]

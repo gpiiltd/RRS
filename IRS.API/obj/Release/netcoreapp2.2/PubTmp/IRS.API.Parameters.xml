@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="IRS" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\fojek\\OneDrive\\Documents\\Visual\ Studio\ 2019\\Projects\\IRS\\IRS\.API\\obj\\Release\\netcoreapp2\.2\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="IRS.DAL.ApplicationDbContext" description="" value="" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\fojek\\OneDrive\\Documents\\Visual\ Studio\ 2019\\Projects\\IRS\\IRS\.API\\obj\\Release\\netcoreapp2\.2\\PubTmp\\EFSQLScripts\\IRS\.DAL\.ApplicationDbContext\.sql$" />
+  </parameter>
+</parameters>

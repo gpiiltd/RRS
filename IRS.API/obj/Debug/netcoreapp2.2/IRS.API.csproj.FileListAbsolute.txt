@@ -1,0 +1,53 @@
+c:\Users\fojekunle\source\repos\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.csprojAssemblyReference.cache
+c:\Users\fojekunle\source\repos\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.csproj.CoreCompileInputs.cache
+c:\Users\fojekunle\source\repos\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.RazorAssemblyInfo.cache
+c:\Users\fojekunle\source\repos\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.RazorAssemblyInfo.cs
+c:\Users\fojekunle\source\repos\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.AssemblyInfoInputs.cache
+c:\Users\fojekunle\source\repos\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.AssemblyInfo.cs
+c:\Users\fojekunle\source\repos\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.deps.json
+c:\Users\fojekunle\source\repos\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.runtimeconfig.json
+c:\Users\fojekunle\source\repos\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.runtimeconfig.dev.json
+c:\Users\fojekunle\source\repos\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.dll
+c:\Users\fojekunle\source\repos\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.pdb
+c:\Users\fojekunle\source\repos\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.RazorTargetAssemblyInfo.cache
+c:\Users\fojekunle\source\repos\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.dll
+c:\Users\fojekunle\source\repos\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.pdb
+c:\Users\fojekunle\source\repos\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.DAL.dll
+c:\Users\fojekunle\source\repos\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.DAL.pdb
+c:\Users\fojekunle\source\repos\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.csproj.CopyComplete
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.deps.json
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.runtimeconfig.json
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.runtimeconfig.dev.json
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.dll
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.pdb
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.DAL.dll
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.DAL.pdb
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.csprojAssemblyReference.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.csproj.CoreCompileInputs.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.RazorAssemblyInfo.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.RazorAssemblyInfo.cs
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.AssemblyInfoInputs.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.AssemblyInfo.cs
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.RazorTargetAssemblyInfo.cache
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.csproj.CopyComplete
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.dll
+C:\Users\Habeeb\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.pdb
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.deps.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.runtimeconfig.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.runtimeconfig.dev.json
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.dll
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.pdb
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.DAL.dll
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.DAL.pdb
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.csprojAssemblyReference.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.RazorAssemblyInfo.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.RazorAssemblyInfo.cs
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.AssemblyInfoInputs.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.AssemblyInfo.cs
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.RazorTargetAssemblyInfo.cache
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.csproj.CopyComplete
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.dll
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.pdb
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\IRS.API.xml
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\bin\Debug\netcoreapp2.2\nlog.config
+C:\Users\fojek\OneDrive\Documents\Visual Studio 2019\Projects\IRS\IRS.API\obj\Debug\netcoreapp2.2\IRS.API.csproj.CoreCompileInputs.cache
